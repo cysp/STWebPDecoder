@@ -44,7 +44,7 @@ static void STCGDataProviderReleaseDataCallbackFree(void *info, const void *data
 
 		CGColorSpaceRef drgb = CGColorSpaceCreateDeviceRGB();
 		if (drgb) {
-			CGDataProviderRef bitmapDataProvider = CGDataProviderCreateWithData(NULL, bitmapData, (size_t)(w * h * bytesPerPixel), STCGDataProviderReleaseDataCallbackFree);
+			CGDataProviderRef bitmapDataProvider = CGDataProviderCreateWithData(NULL, bitmapData, (size_t)(stride * h), STCGDataProviderReleaseDataCallbackFree);
 
 			if (bitmapDataProvider) {
 				bitmap = CGImageCreate((size_t)w, (size_t)h, bitsPerComponent, bitsPerPixel, stride, drgb, bitmapInfo, bitmapDataProvider, NULL, YES, kCGRenderingIntentDefault);
