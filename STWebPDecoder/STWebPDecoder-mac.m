@@ -12,7 +12,9 @@
 NSString * const STWebPErrorDomain = @"STWebP";
 
 
-static void STCGDataProviderReleaseDataCallbackFree(void *info, const void *data, size_t size);
+static void STCGDataProviderReleaseDataCallbackFree(void *info, const void *data, size_t size) {
+	free((void *)data);
+}
 
 
 @implementation STWebPDecoder
@@ -71,8 +73,3 @@ static void STCGDataProviderReleaseDataCallbackFree(void *info, const void *data
 }
 
 @end
-
-
-static void STCGDataProviderReleaseDataCallbackFree(void *info, const void *data, size_t size) {
-	free((void *)data);
-}
