@@ -34,3 +34,30 @@ enum STWebPErrorCode {
 #endif
 
 @end
+
+
+
+typedef NS_ENUM(NSUInteger, STWebPStreamingDecoderState) {
+	STWebPStreamingDecoderStateIncomplete = 0,
+	STWebPStreamingDecoderStateComplete,
+	STWebPStreamingDecoderStateError,
+};
+
+@interface STWebPStreamingDecoder : NSObject
+
++ (instancetype)decoderWithData:(NSData *)data;
+- (id)initWithData:(NSData *)data;
+
+- (STWebPStreamingDecoderState)updateWithData:(NSData *)data;
+
+@property (nonatomic,assign,readonly) STWebPStreamingDecoderState state;
+
+#if defined(STWEBP_UIKIT) && STWEBP_UIKIT
+- (UIImage *)imageWithScale:(CGFloat)scale;
+#endif
+
+#if defined(STWEBP_APPKIT) && STWEBP_APPKIT
+- (NSImage *)imageWithScale:(CGFloat)scale;
+#endif
+
+@end
