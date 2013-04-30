@@ -173,16 +173,18 @@ static void STCGDataProviderReleaseDataCallbackFree(void *info, const void *data
 
 		CGBitmapInfo const bitmapInfo = kCGBitmapByteOrder32Little | kCGImageAlphaFirst;
 
-		uint8_t *bitmapData = calloc(stride, h);
-		memcpy(bitmapData, bitmapDataInternal, stride * last_y);
-
 		CGColorSpaceRef drgb = CGColorSpaceCreateDeviceRGB();
 		if (drgb) {
+			uint8_t *bitmapData = calloc(stride, h);
+			memcpy(bitmapData, bitmapDataInternal, stride * last_y);
+
 			CGDataProviderRef bitmapDataProvider = CGDataProviderCreateWithData(NULL, bitmapData, (size_t)(stride * h), STCGDataProviderReleaseDataCallbackFree);
 
 			if (bitmapDataProvider) {
 				bitmap = CGImageCreate((size_t)w, (size_t)h, bitsPerComponent, bitsPerPixel, stride, drgb, bitmapInfo, bitmapDataProvider, NULL, YES, kCGRenderingIntentDefault);
 				CGDataProviderRelease(bitmapDataProvider);
+			} else {
+				free(bitmapData);
 			}
 
 			CGColorSpaceRelease(drgb);
