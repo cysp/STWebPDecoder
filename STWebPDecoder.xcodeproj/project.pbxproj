@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C5BD00E173157D2006B6AC5 /* STWebPURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5BD00C173157D2006B6AC5 /* STWebPURLProtocol.h */; };
+		2C5BD00F173157D2006B6AC5 /* STWebPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */; };
+		2C5BD010173157D2006B6AC5 /* STWebPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */; };
 		2C605BB31727CEE500CE8626 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB21727CEE500CE8626 /* UIKit.framework */; };
 		2C605BB51727CEE500CE8626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB41727CEE500CE8626 /* Foundation.framework */; };
 		2C605BB71727CEE500CE8626 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB61727CEE500CE8626 /* CoreGraphics.framework */; };
@@ -131,6 +134,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C5BD00C173157D2006B6AC5 /* STWebPURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWebPURLProtocol.h; sourceTree = "<group>"; };
+		2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWebPURLProtocol.m; sourceTree = "<group>"; };
 		2C605BAF1727CEE500CE8626 /* STWebPDecoderExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STWebPDecoderExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C605BB21727CEE500CE8626 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2C605BB41727CEE500CE8626 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -551,6 +556,8 @@
 				2CFC2D26172BD74300893638 /* STWebPDecoder.h */,
 				2CFC2D28172BD74300893638 /* STWebPDecoder-iOS.m */,
 				2CB9CC29172C85EC0054BC07 /* STWebPDecoder-mac.m */,
+				2C5BD00C173157D2006B6AC5 /* STWebPURLProtocol.h */,
+				2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */,
 			);
 			path = STWebPDecoder;
 			sourceTree = "<group>";
@@ -562,6 +569,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C5BD00E173157D2006B6AC5 /* STWebPURLProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +761,7 @@
 				2CE5C6BF172C84FB00CB54A5 /* thread.c in Sources */,
 				2CE5C6C0172C84FB00CB54A5 /* utils.c in Sources */,
 				2CB9CC2B172C85EC0054BC07 /* STWebPDecoder-mac.m in Sources */,
+				2C5BD010173157D2006B6AC5 /* STWebPURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,6 +802,7 @@
 				2CFC2D65172BD99000893638 /* thread.c in Sources */,
 				2CFC2D66172BD99000893638 /* utils.c in Sources */,
 				2CFC2D67172BDD5A00893638 /* lossless.c in Sources */,
+				2C5BD00F173157D2006B6AC5 /* STWebPURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
