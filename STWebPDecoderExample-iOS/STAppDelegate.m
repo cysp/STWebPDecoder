@@ -3,6 +3,9 @@
 #import "STAppDelegate.h"
 
 #import "STWebPViewController.h"
+#import "STWebPWebViewController.h"
+
+#import "STWebPURLProtocol.h"
 
 
 @implementation STAppDelegate
@@ -16,7 +19,9 @@
     UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     window.backgroundColor = [UIColor blackColor];
 
-	STWebPViewController *viewController = [STWebPViewController viewController];
+	[STWebPURLProtocol register];
+
+	STWebPWebViewController *viewController = [STWebPWebViewController viewController];
 	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
 	window.rootViewController = navController;
 

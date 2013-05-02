@@ -10,6 +10,7 @@
 		2C5BD00E173157D2006B6AC5 /* STWebPURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5BD00C173157D2006B6AC5 /* STWebPURLProtocol.h */; };
 		2C5BD00F173157D2006B6AC5 /* STWebPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */; };
 		2C5BD010173157D2006B6AC5 /* STWebPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */; };
+		2C5BD01317327425006B6AC5 /* STWebPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD01217327425006B6AC5 /* STWebPWebViewController.m */; };
 		2C605BB31727CEE500CE8626 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB21727CEE500CE8626 /* UIKit.framework */; };
 		2C605BB51727CEE500CE8626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB41727CEE500CE8626 /* Foundation.framework */; };
 		2C605BB71727CEE500CE8626 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB61727CEE500CE8626 /* CoreGraphics.framework */; };
@@ -136,6 +137,8 @@
 /* Begin PBXFileReference section */
 		2C5BD00C173157D2006B6AC5 /* STWebPURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWebPURLProtocol.h; sourceTree = "<group>"; };
 		2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWebPURLProtocol.m; sourceTree = "<group>"; };
+		2C5BD01117327425006B6AC5 /* STWebPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWebPWebViewController.h; sourceTree = "<group>"; };
+		2C5BD01217327425006B6AC5 /* STWebPWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWebPWebViewController.m; sourceTree = "<group>"; };
 		2C605BAF1727CEE500CE8626 /* STWebPDecoderExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STWebPDecoderExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C605BB21727CEE500CE8626 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2C605BB41727CEE500CE8626 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -344,6 +347,8 @@
 				2C605BC81727CEE500CE8626 /* Default-568h@2x.png */,
 				2C605BD41727D85700CE8626 /* STWebPViewController.h */,
 				2C605BD51727D85700CE8626 /* STWebPViewController.m */,
+				2C5BD01117327425006B6AC5 /* STWebPWebViewController.h */,
+				2C5BD01217327425006B6AC5 /* STWebPWebViewController.m */,
 			);
 			path = "STWebPDecoderExample-iOS";
 			sourceTree = "<group>";
@@ -712,6 +717,7 @@
 				2C605BBF1727CEE500CE8626 /* main.m in Sources */,
 				2C605BC31727CEE500CE8626 /* STAppDelegate.m in Sources */,
 				2C605BD61727D85700CE8626 /* STWebPViewController.m in Sources */,
+				2C5BD01317327425006B6AC5 /* STWebPWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
