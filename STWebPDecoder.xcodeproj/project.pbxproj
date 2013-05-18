@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C5BD00E173157D2006B6AC5 /* STWebPURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C5BD00C173157D2006B6AC5 /* STWebPURLProtocol.h */; };
 		2C5BD00F173157D2006B6AC5 /* STWebPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */; };
-		2C5BD010173157D2006B6AC5 /* STWebPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */; };
 		2C5BD01317327425006B6AC5 /* STWebPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD01217327425006B6AC5 /* STWebPWebViewController.m */; };
 		2C605BB31727CEE500CE8626 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB21727CEE500CE8626 /* UIKit.framework */; };
 		2C605BB51727CEE500CE8626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB41727CEE500CE8626 /* Foundation.framework */; };
@@ -574,7 +572,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C5BD00E173157D2006B6AC5 /* STWebPURLProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,7 +764,6 @@
 				2CE5C6BF172C84FB00CB54A5 /* thread.c in Sources */,
 				2CE5C6C0172C84FB00CB54A5 /* utils.c in Sources */,
 				2CB9CC2B172C85EC0054BC07 /* STWebPDecoder-mac.m in Sources */,
-				2C5BD010173157D2006B6AC5 /* STWebPURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
