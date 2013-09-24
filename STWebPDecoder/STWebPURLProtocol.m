@@ -95,6 +95,13 @@ static NSUInteger const STWebPURLProtocolSchemePrefixLength = 7;
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+	NSHTTPURLResponse * const httpResponse = [response isKindOfClass:[NSHTTPURLResponse class]] ? (NSHTTPURLResponse *)response : nil;
+
+	if (httpResponse.statusCode != 200) {
+		[self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageAllowed];
+		return;
+	}
+
 	NSDictionary * const responseHeaderFields = @{
 		@"Content-Type": @"image/png",
 	};
