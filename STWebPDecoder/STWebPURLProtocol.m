@@ -52,9 +52,9 @@ static NSString * const STWebPURLRequestHandledValue = @"handled";
 
 + (NSURLRequest *)st_canonicalRequestForRequest:(NSURLRequest *)request {
 	NSURL *url = request.URL;
-	NSString * const urlScheme = url.scheme;
-	if ([urlScheme hasPrefix:STWebPURLProtocolSchemePrefix]) {
-		url = [[NSURL alloc] initWithScheme:[urlScheme substringFromIndex:STWebPURLProtocolSchemePrefixLength] host:url.host path:url.path];
+	NSString * const absoluteURLString = [url absoluteString];
+	if ([absoluteURLString hasPrefix:STWebPURLProtocolSchemePrefix]) {
+		url = [NSURL URLWithString:[absoluteURLString substringFromIndex:STWebPURLProtocolSchemePrefixLength]];
 	}
 	NSMutableURLRequest * const modifiedRequest = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:request.cachePolicy timeoutInterval:request.timeoutInterval];
 	[modifiedRequest addValue:@"image/webp" forHTTPHeaderField:@"Accept"];
