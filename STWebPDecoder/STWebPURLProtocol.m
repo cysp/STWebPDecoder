@@ -34,10 +34,12 @@ static NSString * const STWebPURLRequestHandledValue = @"handled";
 		return NO;
 	}
 
+	NSString * const requestURLScheme = request.URL.scheme.lowercaseString;
+
 	BOOL canProbablyInit = NO;
-	if ([request.URL.scheme hasPrefix:STWebPURLProtocolSchemePrefix]) {
-		NSString * const unprefixedScheme = [request.URL.scheme substringFromIndex:STWebPURLProtocolSchemePrefixLength];
-		canProbablyInit = [unprefixedScheme hasPrefix:@"http"];
+	if ([requestURLScheme hasPrefix:STWebPURLProtocolSchemePrefix]) {
+		NSString * const deprefixedScheme = [requestURLScheme substringFromIndex:STWebPURLProtocolSchemePrefixLength];
+		canProbablyInit = [deprefixedScheme hasPrefix:@"http"];
 	}
 	if (!canProbablyInit) {
 		return NO;
