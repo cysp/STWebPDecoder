@@ -5,8 +5,8 @@
 
 @interface STAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (nonatomic,assign) IBOutlet NSWindow *window;
 
-@property (strong) IBOutlet NSImageView *imageView;
+@property (nonatomic,strong) IBOutlet NSImageView *imageView;
 
 @end

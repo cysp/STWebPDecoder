@@ -118,19 +118,19 @@ static NSDictionary *gSTWebPURLProtocolOptions = nil;
 
 #pragma mark - NSURLConnectionDelegate
 
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+- (void)connection:(NSURLConnection * __unused)connection didFailWithError:(NSError *)error {
 	[self.client URLProtocol:self didFailWithError:error];
 }
 
 
 #pragma mark - NSURLConnectionDataDelegate
 
-- (NSURLRequest *)connection:(NSURLConnection *)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse *)response {
+- (NSURLRequest *)connection:(NSURLConnection * __unused)connection willSendRequest:(NSURLRequest *)request redirectResponse:(NSURLResponse * __unused)response {
 //	[self.client URLProtocol:self wasRedirectedToRequest:request redirectResponse:response];
 	return request;
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+- (void)connection:(NSURLConnection * __unused)connection didReceiveResponse:(NSURLResponse *)response {
 	NSHTTPURLResponse * const httpResponse = [response isKindOfClass:[NSHTTPURLResponse class]] ? (NSHTTPURLResponse *)response : nil;
 
 	if (httpResponse.statusCode != 200) {
@@ -149,11 +149,11 @@ static NSDictionary *gSTWebPURLProtocolOptions = nil;
 	[self.client URLProtocol:self didReceiveResponse:modifiedResponse cacheStoragePolicy:NSURLCacheStorageAllowed];
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+- (void)connection:(NSURLConnection * __unused)connection didReceiveData:(NSData *)data {
 	[_responseData appendData:data];
 }
 
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+- (void)connectionDidFinishLoading:(NSURLConnection * __unused)connection {
 	UIImage *image = [STWebPDecoder imageWithData:_responseData error:NULL];
 	NSData *imagePNGData = UIImagePNGRepresentation(image);
 	[self.client URLProtocol:self didLoadData:imagePNGData];
