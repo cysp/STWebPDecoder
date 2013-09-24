@@ -9,11 +9,17 @@
 #import "STWebPDecoder.h"
 
 
+NSString * const STWebPURLProtocolOptionClaimWebPExtension = @"claim-webp-extension";
+
+
 NSString * const STWebPURLProtocolSchemePrefix = @"stwebp-";
 static NSUInteger const STWebPURLProtocolSchemePrefixLength = 7;
 
 static NSString * const STWebPURLRequestHandledKey = @"stwebp-handled";
 static NSString * const STWebPURLRequestHandledValue = @"handled";
+
+
+static NSDictionary *gSTWebPURLProtocolOptions = nil;
 
 
 @interface STWebPURLProtocol () <NSURLConnectionDataDelegate>
@@ -26,6 +32,20 @@ static NSString * const STWebPURLRequestHandledValue = @"handled";
 }
 
 + (void)register {
+	[self registerWithOptions:nil];
+}
++ (void)registerWithOptions:(NSDictionary *)options {
+	NSAssert([NSThread isMainThread], @"not on main thread");
+
+	NSMutableDictionary *sanitizedOptions = [[NSMutableDictionary alloc] initWithCapacity:options.count];
+	{
+		id const optionClaimWebPExtension = options[STWebPURLProtocolOptionClaimWebPExtension];
+		if ([optionClaimWebPExtension respondsToSelector:@selector(boolValue)] && [optionClaimWebPExtension boolValue]) {
+			[sanitizedOptions setObject:@YES forKey:STWebPURLProtocolOptionClaimWebPExtension];
+		}
+	}
+	gSTWebPURLProtocolOptions = [sanitizedOptions copy];
+
 	[NSURLProtocol registerClass:self];
 }
 
@@ -40,6 +60,12 @@ static NSString * const STWebPURLRequestHandledValue = @"handled";
 	if ([requestURLScheme hasPrefix:STWebPURLProtocolSchemePrefix]) {
 		NSString * const deprefixedScheme = [requestURLScheme substringFromIndex:STWebPURLProtocolSchemePrefixLength];
 		canProbablyInit = [deprefixedScheme hasPrefix:@"http"];
+	}
+	if (!canProbablyInit && [gSTWebPURLProtocolOptions[STWebPURLProtocolOptionClaimWebPExtension] boolValue]) {
+		NSString * const requestURLPathExtension = request.URL.pathExtension.lowercaseString;
+		if ([@"webp" isEqualToString:requestURLPathExtension]) {
+			canProbablyInit = [requestURLScheme hasPrefix:@"http"];
+		}
 	}
 	if (!canProbablyInit) {
 		return NO;

@@ -10,6 +10,10 @@
 extern NSString * const STWebPURLProtocolSchemePrefix;
 
 
+extern NSString * const STWebPURLProtocolOptionClaimWebPExtension;
+
+
 @interface STWebPURLProtocol : NSURLProtocol
 + (void)register;
++ (void)registerWithOptions:(NSDictionary *)options;
 @end

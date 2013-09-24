@@ -19,7 +19,7 @@
 	UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	window.backgroundColor = [UIColor blackColor];
 
-	[STWebPURLProtocol register];
+	[STWebPURLProtocol registerWithOptions:@{ STWebPURLProtocolOptionClaimWebPExtension: @YES }];
 
 	STWebPWebViewController *viewController = [STWebPWebViewController viewController];
 	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
