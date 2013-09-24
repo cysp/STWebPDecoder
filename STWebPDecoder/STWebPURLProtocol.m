@@ -12,6 +12,9 @@
 NSString * const STWebPURLProtocolSchemePrefix = @"stwebp-";
 static NSUInteger const STWebPURLProtocolSchemePrefixLength = 7;
 
+static NSString * const STWebPURLRequestHandledKey = @"stwebp-handled";
+static NSString * const STWebPURLRequestHandledValue = @"handled";
+
 
 @interface STWebPURLProtocol () <NSURLConnectionDataDelegate>
 @end
@@ -27,6 +30,10 @@ static NSUInteger const STWebPURLProtocolSchemePrefixLength = 7;
 }
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request {
+	if ([self propertyForKey:STWebPURLRequestHandledKey inRequest:request] == STWebPURLRequestHandledValue) {
+		return NO;
+	}
+
 	BOOL canProbablyInit = NO;
 	if ([request.URL.scheme hasPrefix:STWebPURLProtocolSchemePrefix]) {
 		NSString * const unprefixedScheme = [request.URL.scheme substringFromIndex:STWebPURLProtocolSchemePrefixLength];
@@ -51,6 +58,7 @@ static NSUInteger const STWebPURLProtocolSchemePrefixLength = 7;
 	}
 	NSMutableURLRequest * const modifiedRequest = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:request.cachePolicy timeoutInterval:request.timeoutInterval];
 	[modifiedRequest addValue:@"image/webp" forHTTPHeaderField:@"Accept"];
+	[self setProperty:STWebPURLRequestHandledValue forKey:STWebPURLRequestHandledKey inRequest:modifiedRequest];
 	return modifiedRequest;
 }
 
