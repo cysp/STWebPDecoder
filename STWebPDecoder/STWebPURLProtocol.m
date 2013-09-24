@@ -152,7 +152,13 @@ static NSDictionary *gSTWebPURLProtocolOptions = nil;
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection * __unused)connection {
-	UIImage *image = [_decoder imageWithScale:1];
+	NSError *error = nil;
+	UIImage *image = [_decoder imageWithScale:1 error:&error];
+	if (!image) {
+		[self.client URLProtocol:self didFailWithError:error];
+		return;
+	}
+
 	NSData *imagePNGData = UIImagePNGRepresentation(image);
 	[self.client URLProtocol:self didLoadData:imagePNGData];
 	[self.client URLProtocolDidFinishLoading:self];
