@@ -31,6 +31,9 @@
 		2CB9CC40172C86E10054BC07 /* STAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9CC3F172C86E10054BC07 /* STAppDelegate.m */; };
 		2CB9CC43172C86E20054BC07 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9CC41172C86E20054BC07 /* MainMenu.xib */; };
 		2CB9CC49172C87170054BC07 /* libSTWebPDecoder-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder-mac.a */; };
+		2CCC346C17F040E600EC7B66 /* alpha_processing.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC346A17F040E600EC7B66 /* alpha_processing.c */; };
+		2CCC346D17F040E600EC7B66 /* alpha_processing.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC346A17F040E600EC7B66 /* alpha_processing.c */; };
+		2CCC346E17F040E600EC7B66 /* alpha_processing.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCC346B17F040E600EC7B66 /* alpha_processing.h */; };
 		2CCF47F51747174000BBE8A2 /* STWebPDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CFC2D26172BD74300893638 /* STWebPDecoder.h */; };
 		2CE5C692172C83EF00CB54A5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE5C691172C83EF00CB54A5 /* Cocoa.framework */; };
 		2CE5C6A1172C847D00CB54A5 /* alpha.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F560172A8CDE00FC9B99 /* alpha.c */; };
@@ -162,6 +165,8 @@
 		2CB9CC3E172C86E10054BC07 /* STAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STAppDelegate.h; sourceTree = "<group>"; };
 		2CB9CC3F172C86E10054BC07 /* STAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STAppDelegate.m; sourceTree = "<group>"; };
 		2CB9CC42172C86E20054BC07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2CCC346A17F040E600EC7B66 /* alpha_processing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alpha_processing.c; sourceTree = "<group>"; };
+		2CCC346B17F040E600EC7B66 /* alpha_processing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alpha_processing.h; sourceTree = "<group>"; };
 		2CE3F560172A8CDE00FC9B99 /* alpha.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alpha.c; sourceTree = "<group>"; };
 		2CE3F561172A8CDE00FC9B99 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
 		2CE3F562172A8CDE00FC9B99 /* decode_vp8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode_vp8.h; sourceTree = "<group>"; };
@@ -504,6 +509,8 @@
 		2CE3F5AD172A8CDE00FC9B99 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				2CCC346A17F040E600EC7B66 /* alpha_processing.c */,
+				2CCC346B17F040E600EC7B66 /* alpha_processing.h */,
 				2CE3F5AE172A8CDE00FC9B99 /* bit_reader.c */,
 				2CE3F5AF172A8CDE00FC9B99 /* bit_reader.h */,
 				2CE3F5B0172A8CDE00FC9B99 /* bit_writer.c */,
@@ -573,6 +580,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CCC346E17F040E600EC7B66 /* alpha_processing.h in Headers */,
 				2CCF47F51747174000BBE8A2 /* STWebPDecoder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -762,6 +770,7 @@
 				2CE5C6BB172C84FB00CB54A5 /* huffman_encode.c in Sources */,
 				2CE5C6BC172C84FB00CB54A5 /* quant_levels.c in Sources */,
 				2CE5C6BD172C84FB00CB54A5 /* quant_levels_dec.c in Sources */,
+				2CCC346D17F040E600EC7B66 /* alpha_processing.c in Sources */,
 				2CE5C6BE172C84FB00CB54A5 /* rescaler.c in Sources */,
 				2CE5C6BF172C84FB00CB54A5 /* thread.c in Sources */,
 				2CE5C6C0172C84FB00CB54A5 /* utils.c in Sources */,
@@ -792,6 +801,7 @@
 				2CFC2D3F172BD99000893638 /* dec_sse2.c in Sources */,
 				2CFC2D44172BD99000893638 /* upsampling.c in Sources */,
 				2CFC2D45172BD99000893638 /* upsampling_neon.c in Sources */,
+				2CCC346C17F040E600EC7B66 /* alpha_processing.c in Sources */,
 				2CFC2D46172BD99000893638 /* upsampling_sse2.c in Sources */,
 				2CFC2D47172BD99000893638 /* yuv.c in Sources */,
 				2CFC2D5C172BD99000893638 /* bit_reader.c in Sources */,
