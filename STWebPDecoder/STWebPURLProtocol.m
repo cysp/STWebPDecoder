@@ -28,7 +28,7 @@ static NSDictionary *gSTWebPURLProtocolOptions = nil;
 @implementation STWebPURLProtocol {
 @private
 	NSURLConnection *_connection;
-	NSMutableData *_responseData;
+	STWebPStreamingDecoder *_decoder;
 }
 
 + (void)register {
@@ -96,8 +96,6 @@ static NSDictionary *gSTWebPURLProtocolOptions = nil;
 		request = [self.class canonicalRequestForRequest:request];
 		_connection = [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:NO];
 		[_connection scheduleInRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
-
-		_responseData = [[NSMutableData alloc] init];
 	}
 	return self;
 }
@@ -145,16 +143,16 @@ static NSDictionary *gSTWebPURLProtocolOptions = nil;
 	NSURLRequest * const request = self.request;
 	NSHTTPURLResponse * const modifiedResponse = [[NSHTTPURLResponse alloc] initWithURL:request.URL statusCode:200 HTTPVersion:@"1.0" headerFields:responseHeaderFields];
 
-	[_responseData setLength:0];
+	_decoder = [[STWebPStreamingDecoder alloc] init];
 	[self.client URLProtocol:self didReceiveResponse:modifiedResponse cacheStoragePolicy:NSURLCacheStorageAllowed];
 }
 
 - (void)connection:(NSURLConnection * __unused)connection didReceiveData:(NSData *)data {
-	[_responseData appendData:data];
+	[_decoder updateWithData:data];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection * __unused)connection {
-	UIImage *image = [STWebPDecoder imageWithData:_responseData error:NULL];
+	UIImage *image = [_decoder imageWithScale:1];
 	NSData *imagePNGData = UIImagePNGRepresentation(image);
 	[self.client URLProtocol:self didLoadData:imagePNGData];
 	[self.client URLProtocolDidFinishLoading:self];
