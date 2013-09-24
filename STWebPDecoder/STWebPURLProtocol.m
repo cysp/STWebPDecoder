@@ -148,7 +148,16 @@ static NSDictionary *gSTWebPURLProtocolOptions = nil;
 }
 
 - (void)connection:(NSURLConnection * __unused)connection didReceiveData:(NSData *)data {
-	[_decoder updateWithData:data];
+	STWebPStreamingDecoderState const state = [_decoder updateWithData:data];
+	switch (state) {
+		case STWebPStreamingDecoderStateIncomplete:
+		case STWebPStreamingDecoderStateComplete:
+			break;
+		case STWebPStreamingDecoderStateError: {
+			[connection cancel];
+			[self.client URLProtocol:self didFailWithError:[NSError errorWithDomain:STWebPErrorDomain code:STWebPDecodeFailure userInfo:nil]];
+		} break;
+	}
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection * __unused)connection {
