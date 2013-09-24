@@ -27,7 +27,12 @@ static NSUInteger const STWebPURLProtocolSchemePrefixLength = 7;
 }
 
 + (BOOL)canInitWithRequest:(NSURLRequest *)request {
-	if (![request.URL.scheme hasPrefix:STWebPURLProtocolSchemePrefix]) {
+	BOOL canProbablyInit = NO;
+	if ([request.URL.scheme hasPrefix:STWebPURLProtocolSchemePrefix]) {
+		NSString * const unprefixedScheme = [request.URL.scheme substringFromIndex:STWebPURLProtocolSchemePrefixLength];
+		canProbablyInit = [unprefixedScheme hasPrefix:@"http"];
+	}
+	if (!canProbablyInit) {
 		return NO;
 	}
 	request = [self st_canonicalRequestForRequest:request];
@@ -39,13 +44,13 @@ static NSUInteger const STWebPURLProtocolSchemePrefixLength = 7;
 }
 
 + (NSURLRequest *)st_canonicalRequestForRequest:(NSURLRequest *)request {
-	NSURL * const url = request.URL;
+	NSURL *url = request.URL;
 	NSString * const urlScheme = url.scheme;
-	if (![urlScheme hasPrefix:STWebPURLProtocolSchemePrefix]) {
-		return request;
+	if ([urlScheme hasPrefix:STWebPURLProtocolSchemePrefix]) {
+		url = [[NSURL alloc] initWithScheme:[urlScheme substringFromIndex:STWebPURLProtocolSchemePrefixLength] host:url.host path:url.path];
 	}
-	NSURL * const modifiedURL = [[NSURL alloc] initWithScheme:[urlScheme substringFromIndex:STWebPURLProtocolSchemePrefixLength] host:url.host path:url.path];
-	NSURLRequest * const modifiedRequest = [[NSURLRequest alloc] initWithURL:modifiedURL cachePolicy:request.cachePolicy timeoutInterval:request.timeoutInterval];
+	NSMutableURLRequest * const modifiedRequest = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:request.cachePolicy timeoutInterval:request.timeoutInterval];
+	[modifiedRequest addValue:@"image/webp" forHTTPHeaderField:@"Accept"];
 	return modifiedRequest;
 }
 
