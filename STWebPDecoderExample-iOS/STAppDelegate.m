@@ -16,8 +16,8 @@
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    window.backgroundColor = [UIColor blackColor];
+	UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	window.backgroundColor = [UIColor blackColor];
 
 	[STWebPURLProtocol register];
 
@@ -27,7 +27,7 @@
 
 	self.window = window;
 
-    return YES;
+	return YES;
 }
 
 @end

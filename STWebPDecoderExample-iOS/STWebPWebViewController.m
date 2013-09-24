@@ -1,10 +1,4 @@
-//
-//  STWebPWebViewController.m
-//  STWebPDecoder
-//
-//  Created by Scott Talbot on 2/05/13.
 //  Copyright (c) 2013 Scott Talbot. All rights reserved.
-//
 
 #import "STWebPWebViewController.h"
 
@@ -21,9 +15,9 @@
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-    }
-    return self;
+	if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
+	}
+	return self;
 }
 
 - (void)loadView {
@@ -38,7 +32,7 @@
 }
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+	[super viewDidLoad];
 
 //	double delayInSeconds = 2.0;
 //	dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));

@@ -1,14 +1,8 @@
-//
-//  STAppDelegate.m
-//  STWebPDecoderExample-mac
-//
-//  Created by Scott Talbot on 28/04/13.
 //  Copyright (c) 2013 Scott Talbot. All rights reserved.
-//
 
 #import "STAppDelegate.h"
-
 #import "STWebPDecoder.h"
+
 
 @implementation STAppDelegate
 

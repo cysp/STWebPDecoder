@@ -22,9 +22,9 @@
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-    }
-    return self;
+	if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
+	}
+	return self;
 }
 
 
