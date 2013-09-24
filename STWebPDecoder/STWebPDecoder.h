@@ -54,10 +54,12 @@ typedef NS_ENUM(NSUInteger, STWebPStreamingDecoderState) {
 
 #if defined(STWEBP_UIKIT) && STWEBP_UIKIT
 - (UIImage *)imageWithScale:(CGFloat)scale;
+- (UIImage *)imageWithScale:(CGFloat)scale error:(NSError * __autoreleasing *)error;
 #endif
 
 #if defined(STWEBP_APPKIT) && STWEBP_APPKIT
 - (NSImage *)imageWithScale:(CGFloat)scale;
+- (NSImage *)imageWithScale:(CGFloat)scale error:(NSError * __autoreleasing *)error;
 #endif
 
 @end
