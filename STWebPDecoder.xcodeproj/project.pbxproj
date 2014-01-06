@@ -30,7 +30,7 @@
 		2CB9CC3D172C86E10054BC07 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9CC3B172C86E10054BC07 /* Credits.rtf */; };
 		2CB9CC40172C86E10054BC07 /* STAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9CC3F172C86E10054BC07 /* STAppDelegate.m */; };
 		2CB9CC43172C86E20054BC07 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9CC41172C86E20054BC07 /* MainMenu.xib */; };
-		2CB9CC49172C87170054BC07 /* libSTWebPDecoder-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder-mac.a */; };
+		2CB9CC49172C87170054BC07 /* libSTWebPDecoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder.a */; };
 		2CCC346C17F040E600EC7B66 /* alpha_processing.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC346A17F040E600EC7B66 /* alpha_processing.c */; };
 		2CCC346D17F040E600EC7B66 /* alpha_processing.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC346A17F040E600EC7B66 /* alpha_processing.c */; };
 		2CCC346E17F040E600EC7B66 /* alpha_processing.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCC346B17F040E600EC7B66 /* alpha_processing.h */; };
@@ -71,7 +71,7 @@
 		2CFC2D22172BD74300893638 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB41727CEE500CE8626 /* Foundation.framework */; };
 		2CFC2D27172BD74300893638 /* STWebPDecoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CFC2D26172BD74300893638 /* STWebPDecoder.h */; };
 		2CFC2D29172BD74300893638 /* STWebPDecoder-iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC2D28172BD74300893638 /* STWebPDecoder-iOS.m */; };
-		2CFC2D2F172BD81D00893638 /* libSTWebPDecoder-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFC2D21172BD74300893638 /* libSTWebPDecoder-iOS.a */; };
+		2CFC2D2F172BD81D00893638 /* libSTWebPDecoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFC2D21172BD74300893638 /* libSTWebPDecoder.a */; };
 		2CFC2D30172BD99000893638 /* alpha.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F560172A8CDE00FC9B99 /* alpha.c */; };
 		2CFC2D31172BD99000893638 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F561172A8CDE00FC9B99 /* buffer.c */; };
 		2CFC2D32172BD99000893638 /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F563172A8CDE00FC9B99 /* frame.c */; };
@@ -253,12 +253,12 @@
 		2CE3F5CB172A8CDE00FC9B99 /* mux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux.h; sourceTree = "<group>"; };
 		2CE3F5CC172A8CDE00FC9B99 /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
 		2CE3F5CD172A8CDE00FC9B99 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
-		2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSTWebPDecoder-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTWebPDecoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE5C691172C83EF00CB54A5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		2CE5C694172C83EF00CB54A5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2CE5C695172C83EF00CB54A5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2CE5C696172C83EF00CB54A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2CFC2D21172BD74300893638 /* libSTWebPDecoder-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libSTWebPDecoder-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CFC2D21172BD74300893638 /* libSTWebPDecoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTWebPDecoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFC2D26172BD74300893638 /* STWebPDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STWebPDecoder.h; sourceTree = "<group>"; };
 		2CFC2D28172BD74300893638 /* STWebPDecoder-iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "STWebPDecoder-iOS.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -271,7 +271,7 @@
 				2C605BB31727CEE500CE8626 /* UIKit.framework in Frameworks */,
 				2C605BB51727CEE500CE8626 /* Foundation.framework in Frameworks */,
 				2C605BB71727CEE500CE8626 /* CoreGraphics.framework in Frameworks */,
-				2CFC2D2F172BD81D00893638 /* libSTWebPDecoder-iOS.a in Frameworks */,
+				2CFC2D2F172BD81D00893638 /* libSTWebPDecoder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +279,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CB9CC49172C87170054BC07 /* libSTWebPDecoder-mac.a in Frameworks */,
+				2CB9CC49172C87170054BC07 /* libSTWebPDecoder.a in Frameworks */,
 				2CB9CC31172C86E10054BC07 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,8 +319,8 @@
 		2C605BB01727CEE500CE8626 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2CFC2D21172BD74300893638 /* libSTWebPDecoder-iOS.a */,
-				2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder-mac.a */,
+				2CFC2D21172BD74300893638 /* libSTWebPDecoder.a */,
+				2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder.a */,
 				2C605BAF1727CEE500CE8626 /* STWebPDecoderExample-iOS.app */,
 				2CB9CC30172C86E10054BC07 /* STWebPDecoderExample-mac.app */,
 			);
@@ -641,7 +641,7 @@
 			);
 			name = "STWebPDecoder-mac";
 			productName = "STWebPDecoder-mac";
-			productReference = 2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder-mac.a */;
+			productReference = 2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		2CFC2D20172BD74300893638 /* STWebPDecoder-iOS */ = {
@@ -658,7 +658,7 @@
 			);
 			name = "STWebPDecoder-iOS";
 			productName = "STWebPDecoder-iOS";
-			productReference = 2CFC2D21172BD74300893638 /* libSTWebPDecoder-iOS.a */;
+			productReference = 2CFC2D21172BD74300893638 /* libSTWebPDecoder.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -1022,7 +1022,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = STWebPDecoder;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -1040,7 +1040,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = STWebPDecoder;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -1052,7 +1052,7 @@
 				DSTROOT = /tmp/STWebPDecoder.dst;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = STWebPDecoder;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1063,7 +1063,7 @@
 				DSTROOT = /tmp/STWebPDecoder.dst;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = STWebPDecoder;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
