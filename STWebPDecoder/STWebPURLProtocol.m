@@ -138,6 +138,7 @@ static NSDictionary *gSTWebPURLProtocolOptions = nil;
 
 	NSDictionary * const responseHeaderFields = @{
 		@"Content-Type": @"image/png",
+		@"X-STWebP": @"YES",
 	};
 
 	NSURLRequest * const request = self.request;
