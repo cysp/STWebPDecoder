@@ -16,4 +16,5 @@ extern NSString * const STWebPURLProtocolOptionClaimWebPExtension;
 @interface STWebPURLProtocol : NSURLProtocol
 + (void)register;
 + (void)registerWithOptions:(NSDictionary *)options;
++ (void)unregister;
 @end

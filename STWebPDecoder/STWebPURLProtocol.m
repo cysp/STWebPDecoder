@@ -49,6 +49,13 @@ static NSDictionary *gSTWebPURLProtocolOptions = nil;
 	[NSURLProtocol registerClass:self];
 }
 
++ (void)unregister {
+	NSAssert([NSThread isMainThread], @"not on main thread");
+
+	[self unregisterClass:self];
+	gSTWebPURLProtocolOptions = nil;
+}
+
 + (BOOL)canInitWithRequest:(NSURLRequest *)request {
 	if ([self propertyForKey:STWebPURLRequestHandledKey inRequest:request] == STWebPURLRequestHandledValue) {
 		return NO;
