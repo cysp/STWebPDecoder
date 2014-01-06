@@ -1,3 +1,4 @@
 [submodule "lib/libwebp"]
 	path = lib/libwebp
 	url = https://github.com/cysp/libwebp.git
+	branch = 0.4.0

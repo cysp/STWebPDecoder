@@ -21,6 +21,9 @@
 		2C605BD81727DA9800CE8626 /* 4.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BD71727DA9700CE8626 /* 4.webp */; };
 		2C605BDA1727E1D000CE8626 /* 5_webp_a.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BD91727E1D000CE8626 /* 5_webp_a.webp */; };
 		2C605BDC1727E33B00CE8626 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BDB1727E33B00CE8626 /* 4.jpg */; };
+		2C61728D187AC82D0082C342 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C61728B187AC82D0082C342 /* random.c */; };
+		2C61728E187AC82D0082C342 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C61728B187AC82D0082C342 /* random.c */; };
+		2C61728F187AC82D0082C342 /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C61728C187AC82D0082C342 /* random.h */; };
 		2C751345172C8B020036F82B /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BDB1727E33B00CE8626 /* 4.jpg */; };
 		2C751346172C8B020036F82B /* 4.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BD71727DA9700CE8626 /* 4.webp */; };
 		2C751347172C8B020036F82B /* 5_webp_a.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BD91727E1D000CE8626 /* 5_webp_a.webp */; };
@@ -157,6 +160,8 @@
 		2C605BD71727DA9700CE8626 /* 4.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.webp; sourceTree = "<group>"; };
 		2C605BD91727E1D000CE8626 /* 5_webp_a.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5_webp_a.webp; sourceTree = "<group>"; };
 		2C605BDB1727E33B00CE8626 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		2C61728B187AC82D0082C342 /* random.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = random.c; sourceTree = "<group>"; };
+		2C61728C187AC82D0082C342 /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
 		2CB9CC29172C85EC0054BC07 /* STWebPDecoder-mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STWebPDecoder-mac.m"; sourceTree = "<group>"; };
 		2CB9CC30172C86E10054BC07 /* STWebPDecoderExample-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STWebPDecoderExample-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB9CC34172C86E10054BC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -529,6 +534,8 @@
 				2CE3F5BD172A8CDE00FC9B99 /* quant_levels.h */,
 				2CE3F5BE172A8CDE00FC9B99 /* quant_levels_dec.c */,
 				2CE3F5BF172A8CDE00FC9B99 /* quant_levels_dec.h */,
+				2C61728B187AC82D0082C342 /* random.c */,
+				2C61728C187AC82D0082C342 /* random.h */,
 				2CE3F5C0172A8CDE00FC9B99 /* rescaler.c */,
 				2CE3F5C1172A8CDE00FC9B99 /* rescaler.h */,
 				2CE3F5C2172A8CDE00FC9B99 /* thread.c */,
@@ -585,6 +592,7 @@
 			files = (
 				2CCC346E17F040E600EC7B66 /* alpha_processing.h in Headers */,
 				2CCF47F51747174000BBE8A2 /* STWebPDecoder.h in Headers */,
+				2C61728F187AC82D0082C342 /* random.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,6 +755,7 @@
 				2CE5C6A1172C847D00CB54A5 /* alpha.c in Sources */,
 				2CE5C6A2172C847D00CB54A5 /* buffer.c in Sources */,
 				2CE5C6A3172C847D00CB54A5 /* frame.c in Sources */,
+				2C61728E187AC82D0082C342 /* random.c in Sources */,
 				2CE5C6A4172C847D00CB54A5 /* idec.c in Sources */,
 				2CE5C6A5172C847D00CB54A5 /* io.c in Sources */,
 				2CE5C6A6172C847D00CB54A5 /* layer.c in Sources */,
@@ -807,6 +816,7 @@
 				2CCC346C17F040E600EC7B66 /* alpha_processing.c in Sources */,
 				2CFC2D46172BD99000893638 /* upsampling_sse2.c in Sources */,
 				2CFC2D47172BD99000893638 /* yuv.c in Sources */,
+				2C61728D187AC82D0082C342 /* random.c in Sources */,
 				2CFC2D5C172BD99000893638 /* bit_reader.c in Sources */,
 				2CFC2D5D172BD99000893638 /* bit_writer.c in Sources */,
 				2CFC2D5E172BD99000893638 /* color_cache.c in Sources */,
