@@ -71,6 +71,8 @@
 		2CE5C6BE172C84FB00CB54A5 /* rescaler.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C0172A8CDE00FC9B99 /* rescaler.c */; };
 		2CE5C6BF172C84FB00CB54A5 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C2172A8CDE00FC9B99 /* thread.c */; };
 		2CE5C6C0172C84FB00CB54A5 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C4172A8CDE00FC9B99 /* utils.c */; };
+		2CEFFD2318991BA700ABA059 /* garden-pruner-transparent.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2CEFFD2218991BA700ABA059 /* garden-pruner-transparent.webp */; };
+		2CEFFD2418991BA700ABA059 /* garden-pruner-transparent.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2CEFFD2218991BA700ABA059 /* garden-pruner-transparent.webp */; };
 		2CFC2D22172BD74300893638 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB41727CEE500CE8626 /* Foundation.framework */; };
 		2CFC2D27172BD74300893638 /* STWebPDecoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CFC2D26172BD74300893638 /* STWebPDecoder.h */; };
 		2CFC2D29172BD74300893638 /* STWebPDecoder-iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC2D28172BD74300893638 /* STWebPDecoder-iOS.m */; };
@@ -263,6 +265,7 @@
 		2CE5C694172C83EF00CB54A5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2CE5C695172C83EF00CB54A5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2CE5C696172C83EF00CB54A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CEFFD2218991BA700ABA059 /* garden-pruner-transparent.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "garden-pruner-transparent.webp"; sourceTree = "<group>"; };
 		2CFC2D21172BD74300893638 /* libSTWebPDecoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTWebPDecoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFC2D26172BD74300893638 /* STWebPDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STWebPDecoder.h; sourceTree = "<group>"; };
 		2CFC2D28172BD74300893638 /* STWebPDecoder-iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "STWebPDecoder-iOS.m"; sourceTree = "<group>"; };
@@ -377,6 +380,7 @@
 				2C605BDB1727E33B00CE8626 /* 4.jpg */,
 				2C605BD71727DA9700CE8626 /* 4.webp */,
 				2C605BD91727E1D000CE8626 /* 5_webp_a.webp */,
+				2CEFFD2218991BA700ABA059 /* garden-pruner-transparent.webp */,
 			);
 			path = samples;
 			sourceTree = "<group>";
@@ -708,6 +712,7 @@
 				2C605BC71727CEE500CE8626 /* Default@2x.png in Resources */,
 				2C605BC91727CEE500CE8626 /* Default-568h@2x.png in Resources */,
 				2C605BD81727DA9800CE8626 /* 4.webp in Resources */,
+				2CEFFD2318991BA700ABA059 /* garden-pruner-transparent.webp in Resources */,
 				2C605BDA1727E1D000CE8626 /* 5_webp_a.webp in Resources */,
 				2C605BDC1727E33B00CE8626 /* 4.jpg in Resources */,
 			);
@@ -722,6 +727,7 @@
 				2C751345172C8B020036F82B /* 4.jpg in Resources */,
 				2C751346172C8B020036F82B /* 4.webp in Resources */,
 				2C751347172C8B020036F82B /* 5_webp_a.webp in Resources */,
+				2CEFFD2418991BA700ABA059 /* garden-pruner-transparent.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
