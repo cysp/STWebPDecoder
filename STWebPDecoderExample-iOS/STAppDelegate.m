@@ -21,9 +21,14 @@
 
 	[STWebPURLProtocol registerWithOptions:@{ STWebPURLProtocolOptionClaimWebPExtension: @YES }];
 
+#if 0
 	STWebPWebViewController *viewController = [STWebPWebViewController viewController];
+#else
+	STWebPViewController *viewController = [STWebPViewController viewController];
+#endif
 	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:viewController];
 	window.rootViewController = navController;
+
 
 	self.window = window;
 

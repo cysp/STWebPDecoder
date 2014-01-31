@@ -2,20 +2,28 @@
 
 #import "STWebPViewController.h"
 
+#import "STWebPImage.h"
 #import "STWebPDecoder.h"
 
 #include <mach/mach_time.h>
 
 
-//static void CGDataProviderReleaseDataCallbackFree(void *info, const void *data, size_t size);
+static CGFloat const XIncrementR = FLT_EPSILON * 20000;
+static CGFloat const XIncrementG = FLT_EPSILON * 30000;
+static CGFloat const XIncrementB = FLT_EPSILON * 70000;
 
 
 @interface STWebPViewController ()
 @property (nonatomic,weak) UIImageView *imageView;
 @end
 
-
-@implementation STWebPViewController
+@implementation STWebPViewController {
+@private
+	CADisplayLink *_displayLink;
+	CGFloat _backgroundR;
+	CGFloat _backgroundG;
+	CGFloat _backgroundB;
+}
 
 + (instancetype)viewController {
 	return [[self alloc] initWithNibName:nil bundle:nil];
@@ -23,8 +31,25 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
+		_displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkFired)];
+		_displayLink.paused = YES;
+		[_displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
 	}
 	return self;
+}
+
+- (void)dealloc {
+	[_displayLink invalidate];
+}
+
+- (void)displayLinkFired {
+	double x;
+	_backgroundR = (CGFloat)modf(_backgroundR + XIncrementR, &x);
+	_backgroundG = (CGFloat)modf(_backgroundG + XIncrementG, &x);
+	_backgroundB = (CGFloat)modf(_backgroundB + XIncrementB, &x);
+
+	UIColor * const backgroundColor = [UIColor colorWithRed:_backgroundR green:_backgroundG blue:_backgroundB alpha:1];
+	self.view.backgroundColor = backgroundColor;
 }
 
 
@@ -121,10 +146,28 @@
 //		NSLog(@"jpegi elapsed: %lluns", ((end - start) * timebaseInfo.numer / timebaseInfo.denom) / 100);
 //	}
 
-	NSString * const webpPath = [[NSBundle mainBundle] pathForResource:@"4" ofType:@"webp"];
-	NSData * const webpData = [[NSData alloc] initWithContentsOfFile:webpPath options:NSDataReadingMappedIfSafe error:NULL];
-	self.imageView.image = [STWebPDecoder imageWithData:webpData scale:2 error:NULL];
-//	self.imageView.image = nil;
+	NSString * const webpPath = [[NSBundle mainBundle] pathForResource:@"garden-pruner-transparent" ofType:@"webp"];
+	NSError *error = nil;
+	NSData * const webpData = [[NSData alloc] initWithContentsOfFile:webpPath options:NSDataReadingMappedIfSafe error:&error];
+	STWebPImage * const image = [STWebPDecoder imageWithData:webpData error:&error];
+	UIImageView * const imageView = self.imageView;
+	if (1) {
+		[imageView.layer addAnimation:image.CAKeyframeAnimation forKey:@"contents"];
+	} else {
+		imageView.image = [image animatedUIImage];
+	}
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
+
+	_displayLink.paused = NO;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	[super viewWillDisappear:animated];
+
+	_displayLink.paused = YES;
 }
 
 - (void)viewWillLayoutSubviews {
@@ -150,8 +193,3 @@
 }
 
 @end
-
-
-//static void CGDataProviderReleaseDataCallbackFree(void *info, const void *data, size_t size) {
-//	free((void *)data);
-//};

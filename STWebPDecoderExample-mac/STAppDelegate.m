@@ -7,9 +7,12 @@
 @implementation STAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification * __unused)aNotification {
-	NSString * const webpPath = [[NSBundle mainBundle] pathForResource:@"4" ofType:@"webp"];
+	NSString * const webpPath = [[NSBundle mainBundle] pathForResource:@"garden-pruner-transparent" ofType:@"webp"];
 	NSData * const webpData = [[NSData alloc] initWithContentsOfFile:webpPath options:NSDataReadingMappedIfSafe error:NULL];
-	self.imageView.image = [STWebPDecoder imageWithData:webpData scale:2 error:NULL];
+	STWebPImage * const image = [STWebPDecoder imageWithData:webpData error:NULL];
+	[self.imageView setWantsLayer:YES];
+	self.imageView.image = [image NSImageWithScale:1];
+	[self.imageView.layer addAnimation:image.CAKeyframeAnimation forKey:@"contents"];
 }
 
 @end

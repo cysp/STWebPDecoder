@@ -2,15 +2,9 @@
 //  License, v. 2.0. If a copy of the MPL was not distributed with this
 //  file, You can obtain one at http://mozilla.org/MPL/2.0/.
 //
-//  Copyright (c) 2013-2014 Scott Talbot.
+//  Copyright (c) 2014 Scott Talbot.
 
 #import "STWebP.h"
 
-@class STWebPImage;
 
-
-@interface STWebPDecoder : NSObject
-
-+ (STWebPImage *)imageWithData:(NSData *)data error:(NSError * __autoreleasing *)error;
-
-@end
+NSString * const STWebPErrorDomain = @"STWebP";

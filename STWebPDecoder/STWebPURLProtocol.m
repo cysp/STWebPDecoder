@@ -6,7 +6,7 @@
 
 #import "STWebPURLProtocol.h"
 
-#import "STWebPDecoder.h"
+#import "STWebPStreamingDecoder.h"
 
 
 NSString * const STWebPURLProtocolOptionClaimWebPExtension = @"claim-webp-extension";

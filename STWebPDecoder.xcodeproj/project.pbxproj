@@ -21,94 +21,153 @@
 		2C605BD81727DA9800CE8626 /* 4.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BD71727DA9700CE8626 /* 4.webp */; };
 		2C605BDA1727E1D000CE8626 /* 5_webp_a.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BD91727E1D000CE8626 /* 5_webp_a.webp */; };
 		2C605BDC1727E33B00CE8626 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BDB1727E33B00CE8626 /* 4.jpg */; };
-		2C61728D187AC82D0082C342 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C61728B187AC82D0082C342 /* random.c */; };
-		2C61728E187AC82D0082C342 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C61728B187AC82D0082C342 /* random.c */; };
 		2C61728F187AC82D0082C342 /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C61728C187AC82D0082C342 /* random.h */; };
 		2C751345172C8B020036F82B /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BDB1727E33B00CE8626 /* 4.jpg */; };
 		2C751346172C8B020036F82B /* 4.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BD71727DA9700CE8626 /* 4.webp */; };
 		2C751347172C8B020036F82B /* 5_webp_a.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BD91727E1D000CE8626 /* 5_webp_a.webp */; };
-		2CB9CC2B172C85EC0054BC07 /* STWebPDecoder-mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9CC29172C85EC0054BC07 /* STWebPDecoder-mac.m */; };
-		2CB9CC31172C86E10054BC07 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE5C691172C83EF00CB54A5 /* Cocoa.framework */; };
+		2C77291D189A5C96002DD2B2 /* STWebPImage-iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C77291B189A5C96002DD2B2 /* STWebPImage-iOS.m */; };
+		2C772923189A5D40002DD2B2 /* STWebPImage-mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C772920189A5D40002DD2B2 /* STWebPImage-mac.m */; };
+		2C96A955189A8A3C005CAD72 /* STWebPDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C96A953189A8A3C005CAD72 /* STWebPDecoder.m */; };
+		2C96A956189A8A3C005CAD72 /* STWebPDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C96A953189A8A3C005CAD72 /* STWebPDecoder.m */; };
+		2CB9CC2B172C85EC0054BC07 /* STWebPStreamingDecoder-mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9CC29172C85EC0054BC07 /* STWebPStreamingDecoder-mac.m */; };
 		2CB9CC39172C86E10054BC07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9CC38172C86E10054BC07 /* main.m */; };
 		2CB9CC3D172C86E10054BC07 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9CC3B172C86E10054BC07 /* Credits.rtf */; };
 		2CB9CC40172C86E10054BC07 /* STAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9CC3F172C86E10054BC07 /* STAppDelegate.m */; };
 		2CB9CC43172C86E20054BC07 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9CC41172C86E20054BC07 /* MainMenu.xib */; };
 		2CB9CC49172C87170054BC07 /* libSTWebPDecoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder.a */; };
-		2CCC346C17F040E600EC7B66 /* alpha_processing.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC346A17F040E600EC7B66 /* alpha_processing.c */; };
-		2CCC346D17F040E600EC7B66 /* alpha_processing.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC346A17F040E600EC7B66 /* alpha_processing.c */; };
+		2CBA519A189A8BBE00529073 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA5199189A8BBE00529073 /* AppKit.framework */; };
+		2CBA519C189A8BC300529073 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA519B189A8BC300529073 /* Foundation.framework */; };
+		2CBA519E189A8BCA00529073 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA519D189A8BCA00529073 /* QuartzCore.framework */; };
+		2CBA51A2189B99EE00529073 /* STWebPEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CBA51A0189B99EE00529073 /* STWebPEncoder.h */; };
+		2CBA51A3189B99EE00529073 /* STWebPEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA51A1189B99EE00529073 /* STWebPEncoder.m */; };
+		2CBA51A4189B99EE00529073 /* STWebPEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA51A1189B99EE00529073 /* STWebPEncoder.m */; };
+		2CBA51A8189B9A1400529073 /* STWebP.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CBA51A6189B9A1400529073 /* STWebP.h */; };
+		2CBA51A9189B9A1400529073 /* STWebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA51A7189B9A1400529073 /* STWebP.m */; };
+		2CBA51AA189B9A1400529073 /* STWebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA51A7189B9A1400529073 /* STWebP.m */; };
+		2CBA51FB189BC30D00529073 /* enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57C172A8CDE00FC9B99 /* enc.c */; };
+		2CBA51FC189BC30D00529073 /* enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57C172A8CDE00FC9B99 /* enc.c */; };
+		2CBA51FD189BC31200529073 /* enc_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57D172A8CDE00FC9B99 /* enc_neon.c */; };
+		2CBA51FE189BC31200529073 /* enc_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57E172A8CDE00FC9B99 /* enc_sse2.c */; };
+		2CBA51FF189BC31300529073 /* enc_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57D172A8CDE00FC9B99 /* enc_neon.c */; };
+		2CBA5200189BC31300529073 /* enc_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57E172A8CDE00FC9B99 /* enc_sse2.c */; };
+		2CBA5201189BC34900529073 /* alpha.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F560172A8CDE00FC9B99 /* alpha.c */; };
+		2CBA5202189BC34900529073 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F561172A8CDE00FC9B99 /* buffer.c */; };
+		2CBA5203189BC34900529073 /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F563172A8CDE00FC9B99 /* frame.c */; };
+		2CBA5204189BC34900529073 /* idec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F564172A8CDE00FC9B99 /* idec.c */; };
+		2CBA5205189BC34900529073 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F565172A8CDE00FC9B99 /* io.c */; };
+		2CBA5206189BC34900529073 /* layer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F566172A8CDE00FC9B99 /* layer.c */; };
+		2CBA5207189BC34900529073 /* quant.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F569172A8CDE00FC9B99 /* quant.c */; };
+		2CBA5208189BC34900529073 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56A172A8CDE00FC9B99 /* tree.c */; };
+		2CBA5209189BC34900529073 /* vp8.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56B172A8CDE00FC9B99 /* vp8.c */; };
+		2CBA520A189BC34900529073 /* vp8l.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56D172A8CDE00FC9B99 /* vp8l.c */; };
+		2CBA520B189BC34900529073 /* webp.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56F172A8CDE00FC9B99 /* webp.c */; };
+		2CBA520C189BC34900529073 /* demux.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F572172A8CDE00FC9B99 /* demux.c */; };
+		2CBA520D189BC34900529073 /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F577172A8CDE00FC9B99 /* cpu.c */; };
+		2CBA520E189BC34900529073 /* dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F578172A8CDE00FC9B99 /* dec.c */; };
+		2CBA520F189BC34900529073 /* dec_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F579172A8CDE00FC9B99 /* dec_neon.c */; };
+		2CBA5210189BC34900529073 /* dec_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57A172A8CDE00FC9B99 /* dec_sse2.c */; };
+		2CBA5211189BC34900529073 /* lossless.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57F172A8CDE00FC9B99 /* lossless.c */; };
+		2CBA5212189BC34900529073 /* upsampling.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F583172A8CDE00FC9B99 /* upsampling.c */; };
+		2CBA5213189BC34900529073 /* upsampling_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F584172A8CDE00FC9B99 /* upsampling_neon.c */; };
+		2CBA5214189BC34900529073 /* upsampling_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F585172A8CDE00FC9B99 /* upsampling_sse2.c */; };
+		2CBA5215189BC34900529073 /* yuv.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F586172A8CDE00FC9B99 /* yuv.c */; };
+		2CBA5216189BC34900529073 /* alpha.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F589172A8CDE00FC9B99 /* alpha.c */; };
+		2CBA5217189BC34900529073 /* analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F58A172A8CDE00FC9B99 /* analysis.c */; };
+		2CBA5218189BC34900529073 /* backward_references.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F58B172A8CDE00FC9B99 /* backward_references.c */; };
+		2CBA5219189BC34900529073 /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F58D172A8CDE00FC9B99 /* config.c */; };
+		2CBA521A189BC34900529073 /* cost.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F58E172A8CDE00FC9B99 /* cost.c */; };
+		2CBA521B189BC34900529073 /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F590172A8CDE00FC9B99 /* filter.c */; };
+		2CBA521C189BC34900529073 /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F591172A8CDE00FC9B99 /* frame.c */; };
+		2CBA521D189BC34900529073 /* histogram.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F592172A8CDE00FC9B99 /* histogram.c */; };
+		2CBA521E189BC34900529073 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F594172A8CDE00FC9B99 /* iterator.c */; };
+		2CBA521F189BC34900529073 /* layer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F595172A8CDE00FC9B99 /* layer.c */; };
+		2CBA5220189BC34900529073 /* picture.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F598172A8CDE00FC9B99 /* picture.c */; };
+		2CBA5221189BC34900529073 /* quant.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F599172A8CDE00FC9B99 /* quant.c */; };
+		2CBA5222189BC34900529073 /* syntax.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F59A172A8CDE00FC9B99 /* syntax.c */; };
+		2CBA5223189BC34900529073 /* token.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F59B172A8CDE00FC9B99 /* token.c */; };
+		2CBA5224189BC34900529073 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F59C172A8CDE00FC9B99 /* tree.c */; };
+		2CBA5225189BC34900529073 /* vp8l.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F59E172A8CDE00FC9B99 /* vp8l.c */; };
+		2CBA5226189BC34900529073 /* webpenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5A0172A8CDE00FC9B99 /* webpenc.c */; };
+		2CBA5227189BC34900529073 /* muxedit.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5A9172A8CDE00FC9B99 /* muxedit.c */; };
+		2CBA5228189BC34900529073 /* muxinternal.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5AB172A8CDE00FC9B99 /* muxinternal.c */; };
+		2CBA5229189BC34900529073 /* muxread.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5AC172A8CDE00FC9B99 /* muxread.c */; };
+		2CBA522A189BC34900529073 /* alpha_processing.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC346A17F040E600EC7B66 /* alpha_processing.c */; };
+		2CBA522B189BC34900529073 /* bit_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5AE172A8CDE00FC9B99 /* bit_reader.c */; };
+		2CBA522C189BC34900529073 /* bit_writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B0172A8CDE00FC9B99 /* bit_writer.c */; };
+		2CBA522D189BC34900529073 /* color_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B2172A8CDE00FC9B99 /* color_cache.c */; };
+		2CBA522E189BC34900529073 /* filters.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B4172A8CDE00FC9B99 /* filters.c */; };
+		2CBA522F189BC34900529073 /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B6172A8CDE00FC9B99 /* huffman.c */; };
+		2CBA5230189BC34900529073 /* huffman_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B8172A8CDE00FC9B99 /* huffman_encode.c */; };
+		2CBA5231189BC34900529073 /* quant_levels.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5BC172A8CDE00FC9B99 /* quant_levels.c */; };
+		2CBA5232189BC34900529073 /* quant_levels_dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5BE172A8CDE00FC9B99 /* quant_levels_dec.c */; };
+		2CBA5233189BC34900529073 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C61728B187AC82D0082C342 /* random.c */; };
+		2CBA5234189BC34900529073 /* rescaler.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C0172A8CDE00FC9B99 /* rescaler.c */; };
+		2CBA5235189BC34900529073 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C2172A8CDE00FC9B99 /* thread.c */; };
+		2CBA5236189BC34900529073 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C4172A8CDE00FC9B99 /* utils.c */; };
+		2CBA5237189BC34A00529073 /* alpha.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F560172A8CDE00FC9B99 /* alpha.c */; };
+		2CBA5238189BC34A00529073 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F561172A8CDE00FC9B99 /* buffer.c */; };
+		2CBA5239189BC34A00529073 /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F563172A8CDE00FC9B99 /* frame.c */; };
+		2CBA523A189BC34A00529073 /* idec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F564172A8CDE00FC9B99 /* idec.c */; };
+		2CBA523B189BC34A00529073 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F565172A8CDE00FC9B99 /* io.c */; };
+		2CBA523C189BC34A00529073 /* layer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F566172A8CDE00FC9B99 /* layer.c */; };
+		2CBA523D189BC34A00529073 /* quant.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F569172A8CDE00FC9B99 /* quant.c */; };
+		2CBA523E189BC34A00529073 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56A172A8CDE00FC9B99 /* tree.c */; };
+		2CBA523F189BC34A00529073 /* vp8.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56B172A8CDE00FC9B99 /* vp8.c */; };
+		2CBA5240189BC34A00529073 /* vp8l.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56D172A8CDE00FC9B99 /* vp8l.c */; };
+		2CBA5241189BC34A00529073 /* webp.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56F172A8CDE00FC9B99 /* webp.c */; };
+		2CBA5242189BC34A00529073 /* demux.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F572172A8CDE00FC9B99 /* demux.c */; };
+		2CBA5243189BC34A00529073 /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F577172A8CDE00FC9B99 /* cpu.c */; };
+		2CBA5244189BC34A00529073 /* dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F578172A8CDE00FC9B99 /* dec.c */; };
+		2CBA5245189BC34A00529073 /* dec_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F579172A8CDE00FC9B99 /* dec_neon.c */; };
+		2CBA5246189BC34A00529073 /* dec_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57A172A8CDE00FC9B99 /* dec_sse2.c */; };
+		2CBA5247189BC34A00529073 /* lossless.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57F172A8CDE00FC9B99 /* lossless.c */; };
+		2CBA5248189BC34A00529073 /* upsampling.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F583172A8CDE00FC9B99 /* upsampling.c */; };
+		2CBA5249189BC34A00529073 /* upsampling_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F584172A8CDE00FC9B99 /* upsampling_neon.c */; };
+		2CBA524A189BC34A00529073 /* upsampling_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F585172A8CDE00FC9B99 /* upsampling_sse2.c */; };
+		2CBA524B189BC34A00529073 /* yuv.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F586172A8CDE00FC9B99 /* yuv.c */; };
+		2CBA524C189BC34A00529073 /* alpha.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F589172A8CDE00FC9B99 /* alpha.c */; };
+		2CBA524D189BC34A00529073 /* analysis.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F58A172A8CDE00FC9B99 /* analysis.c */; };
+		2CBA524E189BC34A00529073 /* backward_references.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F58B172A8CDE00FC9B99 /* backward_references.c */; };
+		2CBA524F189BC34A00529073 /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F58D172A8CDE00FC9B99 /* config.c */; };
+		2CBA5250189BC34A00529073 /* cost.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F58E172A8CDE00FC9B99 /* cost.c */; };
+		2CBA5251189BC34A00529073 /* filter.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F590172A8CDE00FC9B99 /* filter.c */; };
+		2CBA5252189BC34A00529073 /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F591172A8CDE00FC9B99 /* frame.c */; };
+		2CBA5253189BC34A00529073 /* histogram.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F592172A8CDE00FC9B99 /* histogram.c */; };
+		2CBA5254189BC34A00529073 /* iterator.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F594172A8CDE00FC9B99 /* iterator.c */; };
+		2CBA5255189BC34A00529073 /* layer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F595172A8CDE00FC9B99 /* layer.c */; };
+		2CBA5256189BC34A00529073 /* picture.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F598172A8CDE00FC9B99 /* picture.c */; };
+		2CBA5257189BC34A00529073 /* quant.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F599172A8CDE00FC9B99 /* quant.c */; };
+		2CBA5258189BC34A00529073 /* syntax.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F59A172A8CDE00FC9B99 /* syntax.c */; };
+		2CBA5259189BC34A00529073 /* token.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F59B172A8CDE00FC9B99 /* token.c */; };
+		2CBA525A189BC34A00529073 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F59C172A8CDE00FC9B99 /* tree.c */; };
+		2CBA525B189BC34A00529073 /* vp8l.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F59E172A8CDE00FC9B99 /* vp8l.c */; };
+		2CBA525C189BC34A00529073 /* webpenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5A0172A8CDE00FC9B99 /* webpenc.c */; };
+		2CBA525D189BC34A00529073 /* muxedit.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5A9172A8CDE00FC9B99 /* muxedit.c */; };
+		2CBA525E189BC34A00529073 /* muxinternal.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5AB172A8CDE00FC9B99 /* muxinternal.c */; };
+		2CBA525F189BC34A00529073 /* muxread.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5AC172A8CDE00FC9B99 /* muxread.c */; };
+		2CBA5260189BC34A00529073 /* alpha_processing.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CCC346A17F040E600EC7B66 /* alpha_processing.c */; };
+		2CBA5261189BC34A00529073 /* bit_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5AE172A8CDE00FC9B99 /* bit_reader.c */; };
+		2CBA5262189BC34A00529073 /* bit_writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B0172A8CDE00FC9B99 /* bit_writer.c */; };
+		2CBA5263189BC34A00529073 /* color_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B2172A8CDE00FC9B99 /* color_cache.c */; };
+		2CBA5264189BC34A00529073 /* filters.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B4172A8CDE00FC9B99 /* filters.c */; };
+		2CBA5265189BC34A00529073 /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B6172A8CDE00FC9B99 /* huffman.c */; };
+		2CBA5266189BC34A00529073 /* huffman_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B8172A8CDE00FC9B99 /* huffman_encode.c */; };
+		2CBA5267189BC34A00529073 /* quant_levels.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5BC172A8CDE00FC9B99 /* quant_levels.c */; };
+		2CBA5268189BC34A00529073 /* quant_levels_dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5BE172A8CDE00FC9B99 /* quant_levels_dec.c */; };
+		2CBA5269189BC34A00529073 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C61728B187AC82D0082C342 /* random.c */; };
+		2CBA526A189BC34A00529073 /* rescaler.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C0172A8CDE00FC9B99 /* rescaler.c */; };
+		2CBA526B189BC34A00529073 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C2172A8CDE00FC9B99 /* thread.c */; };
+		2CBA526C189BC34A00529073 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C4172A8CDE00FC9B99 /* utils.c */; };
+		2CBA529F189BC37000529073 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA51D6189BC25100529073 /* libwebp.a */; };
+		2CBA52A0189BC37700529073 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA51AF189BC15400529073 /* libwebp.a */; };
 		2CCC346E17F040E600EC7B66 /* alpha_processing.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCC346B17F040E600EC7B66 /* alpha_processing.h */; };
 		2CCF47F51747174000BBE8A2 /* STWebPDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CFC2D26172BD74300893638 /* STWebPDecoder.h */; };
-		2CE5C692172C83EF00CB54A5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE5C691172C83EF00CB54A5 /* Cocoa.framework */; };
-		2CE5C6A1172C847D00CB54A5 /* alpha.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F560172A8CDE00FC9B99 /* alpha.c */; };
-		2CE5C6A2172C847D00CB54A5 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F561172A8CDE00FC9B99 /* buffer.c */; };
-		2CE5C6A3172C847D00CB54A5 /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F563172A8CDE00FC9B99 /* frame.c */; };
-		2CE5C6A4172C847D00CB54A5 /* idec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F564172A8CDE00FC9B99 /* idec.c */; };
-		2CE5C6A5172C847D00CB54A5 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F565172A8CDE00FC9B99 /* io.c */; };
-		2CE5C6A6172C847D00CB54A5 /* layer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F566172A8CDE00FC9B99 /* layer.c */; };
-		2CE5C6A7172C847D00CB54A5 /* quant.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F569172A8CDE00FC9B99 /* quant.c */; };
-		2CE5C6A8172C847D00CB54A5 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56A172A8CDE00FC9B99 /* tree.c */; };
-		2CE5C6A9172C847D00CB54A5 /* vp8.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56B172A8CDE00FC9B99 /* vp8.c */; };
-		2CE5C6AA172C847D00CB54A5 /* vp8l.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56D172A8CDE00FC9B99 /* vp8l.c */; };
-		2CE5C6AB172C847D00CB54A5 /* webp.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56F172A8CDE00FC9B99 /* webp.c */; };
-		2CE5C6AC172C848100CB54A5 /* demux.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F572172A8CDE00FC9B99 /* demux.c */; };
-		2CE5C6AD172C849000CB54A5 /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F577172A8CDE00FC9B99 /* cpu.c */; };
-		2CE5C6AE172C849000CB54A5 /* dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F578172A8CDE00FC9B99 /* dec.c */; };
-		2CE5C6AF172C849000CB54A5 /* dec_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F579172A8CDE00FC9B99 /* dec_neon.c */; };
-		2CE5C6B0172C849000CB54A5 /* dec_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57A172A8CDE00FC9B99 /* dec_sse2.c */; };
-		2CE5C6B1172C849500CB54A5 /* lossless.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57F172A8CDE00FC9B99 /* lossless.c */; };
-		2CE5C6B2172C849900CB54A5 /* upsampling.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F583172A8CDE00FC9B99 /* upsampling.c */; };
-		2CE5C6B3172C849900CB54A5 /* upsampling_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F584172A8CDE00FC9B99 /* upsampling_neon.c */; };
-		2CE5C6B4172C849900CB54A5 /* upsampling_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F585172A8CDE00FC9B99 /* upsampling_sse2.c */; };
-		2CE5C6B5172C849900CB54A5 /* yuv.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F586172A8CDE00FC9B99 /* yuv.c */; };
-		2CE5C6B6172C84FB00CB54A5 /* bit_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5AE172A8CDE00FC9B99 /* bit_reader.c */; };
-		2CE5C6B7172C84FB00CB54A5 /* bit_writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B0172A8CDE00FC9B99 /* bit_writer.c */; };
-		2CE5C6B8172C84FB00CB54A5 /* color_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B2172A8CDE00FC9B99 /* color_cache.c */; };
-		2CE5C6B9172C84FB00CB54A5 /* filters.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B4172A8CDE00FC9B99 /* filters.c */; };
-		2CE5C6BA172C84FB00CB54A5 /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B6172A8CDE00FC9B99 /* huffman.c */; };
-		2CE5C6BB172C84FB00CB54A5 /* huffman_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B8172A8CDE00FC9B99 /* huffman_encode.c */; };
-		2CE5C6BC172C84FB00CB54A5 /* quant_levels.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5BC172A8CDE00FC9B99 /* quant_levels.c */; };
-		2CE5C6BD172C84FB00CB54A5 /* quant_levels_dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5BE172A8CDE00FC9B99 /* quant_levels_dec.c */; };
-		2CE5C6BE172C84FB00CB54A5 /* rescaler.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C0172A8CDE00FC9B99 /* rescaler.c */; };
-		2CE5C6BF172C84FB00CB54A5 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C2172A8CDE00FC9B99 /* thread.c */; };
-		2CE5C6C0172C84FB00CB54A5 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C4172A8CDE00FC9B99 /* utils.c */; };
 		2CEFFD2318991BA700ABA059 /* garden-pruner-transparent.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2CEFFD2218991BA700ABA059 /* garden-pruner-transparent.webp */; };
 		2CEFFD2418991BA700ABA059 /* garden-pruner-transparent.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2CEFFD2218991BA700ABA059 /* garden-pruner-transparent.webp */; };
-		2CFC2D22172BD74300893638 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB41727CEE500CE8626 /* Foundation.framework */; };
+		2CEFFD2C189A4B2300ABA059 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CEFFD2B189A4B2300ABA059 /* QuartzCore.framework */; };
 		2CFC2D27172BD74300893638 /* STWebPDecoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CFC2D26172BD74300893638 /* STWebPDecoder.h */; };
-		2CFC2D29172BD74300893638 /* STWebPDecoder-iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC2D28172BD74300893638 /* STWebPDecoder-iOS.m */; };
+		2CFC2D29172BD74300893638 /* STWebPStreamingDecoder-iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC2D28172BD74300893638 /* STWebPStreamingDecoder-iOS.m */; };
 		2CFC2D2F172BD81D00893638 /* libSTWebPDecoder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFC2D21172BD74300893638 /* libSTWebPDecoder.a */; };
-		2CFC2D30172BD99000893638 /* alpha.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F560172A8CDE00FC9B99 /* alpha.c */; };
-		2CFC2D31172BD99000893638 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F561172A8CDE00FC9B99 /* buffer.c */; };
-		2CFC2D32172BD99000893638 /* frame.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F563172A8CDE00FC9B99 /* frame.c */; };
-		2CFC2D33172BD99000893638 /* idec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F564172A8CDE00FC9B99 /* idec.c */; };
-		2CFC2D34172BD99000893638 /* io.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F565172A8CDE00FC9B99 /* io.c */; };
-		2CFC2D35172BD99000893638 /* layer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F566172A8CDE00FC9B99 /* layer.c */; };
-		2CFC2D36172BD99000893638 /* quant.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F569172A8CDE00FC9B99 /* quant.c */; };
-		2CFC2D37172BD99000893638 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56A172A8CDE00FC9B99 /* tree.c */; };
-		2CFC2D38172BD99000893638 /* vp8.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56B172A8CDE00FC9B99 /* vp8.c */; };
-		2CFC2D39172BD99000893638 /* vp8l.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56D172A8CDE00FC9B99 /* vp8l.c */; };
-		2CFC2D3A172BD99000893638 /* webp.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F56F172A8CDE00FC9B99 /* webp.c */; };
-		2CFC2D3B172BD99000893638 /* demux.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F572172A8CDE00FC9B99 /* demux.c */; };
-		2CFC2D3C172BD99000893638 /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F577172A8CDE00FC9B99 /* cpu.c */; };
-		2CFC2D3D172BD99000893638 /* dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F578172A8CDE00FC9B99 /* dec.c */; };
-		2CFC2D3E172BD99000893638 /* dec_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F579172A8CDE00FC9B99 /* dec_neon.c */; };
-		2CFC2D3F172BD99000893638 /* dec_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57A172A8CDE00FC9B99 /* dec_sse2.c */; };
-		2CFC2D44172BD99000893638 /* upsampling.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F583172A8CDE00FC9B99 /* upsampling.c */; };
-		2CFC2D45172BD99000893638 /* upsampling_neon.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F584172A8CDE00FC9B99 /* upsampling_neon.c */; };
-		2CFC2D46172BD99000893638 /* upsampling_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F585172A8CDE00FC9B99 /* upsampling_sse2.c */; };
-		2CFC2D47172BD99000893638 /* yuv.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F586172A8CDE00FC9B99 /* yuv.c */; };
-		2CFC2D5C172BD99000893638 /* bit_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5AE172A8CDE00FC9B99 /* bit_reader.c */; };
-		2CFC2D5D172BD99000893638 /* bit_writer.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B0172A8CDE00FC9B99 /* bit_writer.c */; };
-		2CFC2D5E172BD99000893638 /* color_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B2172A8CDE00FC9B99 /* color_cache.c */; };
-		2CFC2D5F172BD99000893638 /* filters.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B4172A8CDE00FC9B99 /* filters.c */; };
-		2CFC2D60172BD99000893638 /* huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B6172A8CDE00FC9B99 /* huffman.c */; };
-		2CFC2D61172BD99000893638 /* huffman_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5B8172A8CDE00FC9B99 /* huffman_encode.c */; };
-		2CFC2D62172BD99000893638 /* quant_levels.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5BC172A8CDE00FC9B99 /* quant_levels.c */; };
-		2CFC2D63172BD99000893638 /* quant_levels_dec.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5BE172A8CDE00FC9B99 /* quant_levels_dec.c */; };
-		2CFC2D64172BD99000893638 /* rescaler.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C0172A8CDE00FC9B99 /* rescaler.c */; };
-		2CFC2D65172BD99000893638 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C2172A8CDE00FC9B99 /* thread.c */; };
-		2CFC2D66172BD99000893638 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F5C4172A8CDE00FC9B99 /* utils.c */; };
-		2CFC2D67172BDD5A00893638 /* lossless.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57F172A8CDE00FC9B99 /* lossless.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +177,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2CE5C68F172C83EF00CB54A5;
 			remoteInfo = "STWebPDecoder-mac";
+		};
+		2CBA529B189BC36500529073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C605BA71727CEE500CE8626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CBA51AE189BC15400529073;
+			remoteInfo = "libwebp-iOS";
+		};
+		2CBA529D189BC36B00529073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C605BA71727CEE500CE8626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CBA51D5189BC25100529073;
+			remoteInfo = "libwebp-mac";
 		};
 		2CFC2D2D172BD81A00893638 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -129,6 +202,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2CBA51AD189BC15400529073 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CFC2D1F172BD74300893638 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,7 +246,11 @@
 		2C605BDB1727E33B00CE8626 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		2C61728B187AC82D0082C342 /* random.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = random.c; sourceTree = "<group>"; };
 		2C61728C187AC82D0082C342 /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
-		2CB9CC29172C85EC0054BC07 /* STWebPDecoder-mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STWebPDecoder-mac.m"; sourceTree = "<group>"; };
+		2C77291B189A5C96002DD2B2 /* STWebPImage-iOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STWebPImage-iOS.m"; sourceTree = "<group>"; };
+		2C772920189A5D40002DD2B2 /* STWebPImage-mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STWebPImage-mac.m"; sourceTree = "<group>"; };
+		2C772924189A5F9A002DD2B2 /* STWebPImage+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "STWebPImage+Internal.h"; sourceTree = "<group>"; };
+		2C96A953189A8A3C005CAD72 /* STWebPDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWebPDecoder.m; sourceTree = "<group>"; };
+		2CB9CC29172C85EC0054BC07 /* STWebPStreamingDecoder-mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STWebPStreamingDecoder-mac.m"; sourceTree = "<group>"; };
 		2CB9CC30172C86E10054BC07 /* STWebPDecoderExample-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STWebPDecoderExample-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB9CC34172C86E10054BC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB9CC38172C86E10054BC07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -172,6 +258,22 @@
 		2CB9CC3E172C86E10054BC07 /* STAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STAppDelegate.h; sourceTree = "<group>"; };
 		2CB9CC3F172C86E10054BC07 /* STAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STAppDelegate.m; sourceTree = "<group>"; };
 		2CB9CC42172C86E20054BC07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2CBA5199189A8BBE00529073 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		2CBA519B189A8BC300529073 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2CBA519D189A8BCA00529073 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		2CBA51A0189B99EE00529073 /* STWebPEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWebPEncoder.h; sourceTree = "<group>"; };
+		2CBA51A1189B99EE00529073 /* STWebPEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWebPEncoder.m; sourceTree = "<group>"; };
+		2CBA51A6189B9A1400529073 /* STWebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWebP.h; sourceTree = "<group>"; };
+		2CBA51A7189B9A1400529073 /* STWebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWebP.m; sourceTree = "<group>"; };
+		2CBA51AF189BC15400529073 /* libwebp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwebp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBA51BD189BC15400529073 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2CBA51D6189BC25100529073 /* libwebp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwebp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBA51D7189BC25200529073 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		2CBA51DA189BC25200529073 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CBA51DB189BC25200529073 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2CBA51DC189BC25200529073 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		2CBA52A1189BCA6900529073 /* STWebPStreamingDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STWebPStreamingDecoder.h; sourceTree = "<group>"; };
+		2CBA52A2189BCB3600529073 /* STWebPImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STWebPImage.h; sourceTree = "<group>"; };
 		2CCC346A17F040E600EC7B66 /* alpha_processing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alpha_processing.c; sourceTree = "<group>"; };
 		2CCC346B17F040E600EC7B66 /* alpha_processing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alpha_processing.h; sourceTree = "<group>"; };
 		2CE3F560172A8CDE00FC9B99 /* alpha.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alpha.c; sourceTree = "<group>"; };
@@ -261,14 +363,11 @@
 		2CE3F5CC172A8CDE00FC9B99 /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
 		2CE3F5CD172A8CDE00FC9B99 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
 		2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTWebPDecoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CE5C691172C83EF00CB54A5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		2CE5C694172C83EF00CB54A5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		2CE5C695172C83EF00CB54A5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		2CE5C696172C83EF00CB54A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CEFFD2218991BA700ABA059 /* garden-pruner-transparent.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "garden-pruner-transparent.webp"; sourceTree = "<group>"; };
+		2CEFFD2B189A4B2300ABA059 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2CFC2D21172BD74300893638 /* libSTWebPDecoder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTWebPDecoder.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFC2D26172BD74300893638 /* STWebPDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STWebPDecoder.h; sourceTree = "<group>"; };
-		2CFC2D28172BD74300893638 /* STWebPDecoder-iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "STWebPDecoder-iOS.m"; sourceTree = "<group>"; };
+		2CFC2D28172BD74300893638 /* STWebPStreamingDecoder-iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "STWebPStreamingDecoder-iOS.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,7 +378,9 @@
 				2C605BB31727CEE500CE8626 /* UIKit.framework in Frameworks */,
 				2C605BB51727CEE500CE8626 /* Foundation.framework in Frameworks */,
 				2C605BB71727CEE500CE8626 /* CoreGraphics.framework in Frameworks */,
+				2CEFFD2C189A4B2300ABA059 /* QuartzCore.framework in Frameworks */,
 				2CFC2D2F172BD81D00893638 /* libSTWebPDecoder.a in Frameworks */,
+				2CBA52A0189BC37700529073 /* libwebp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +388,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBA519C189A8BC300529073 /* Foundation.framework in Frameworks */,
+				2CBA519A189A8BBE00529073 /* AppKit.framework in Frameworks */,
+				2CBA519E189A8BCA00529073 /* QuartzCore.framework in Frameworks */,
 				2CB9CC49172C87170054BC07 /* libSTWebPDecoder.a in Frameworks */,
-				2CB9CC31172C86E10054BC07 /* Cocoa.framework in Frameworks */,
+				2CBA529F189BC37000529073 /* libwebp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBA51AC189BC15400529073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBA51D3189BC25100529073 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +414,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE5C692172C83EF00CB54A5 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +421,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CFC2D22172BD74300893638 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +430,8 @@
 		2C605BA61727CEE500CE8626 = {
 			isa = PBXGroup;
 			children = (
+				2CBA51A5189B9A0400529073 /* STWebP */,
+				2CBA519F189B984700529073 /* STWebPEncoder */,
 				2CFC2D23172BD74300893638 /* STWebPDecoder */,
 				2C605BB81727CEE500CE8626 /* STWebPDecoderExample-iOS */,
 				2CB9CC32172C86E10054BC07 /* STWebPDecoderExample-mac */,
@@ -331,6 +449,8 @@
 				2CE5C690172C83EF00CB54A5 /* libSTWebPDecoder.a */,
 				2C605BAF1727CEE500CE8626 /* STWebPDecoderExample-iOS.app */,
 				2CB9CC30172C86E10054BC07 /* STWebPDecoderExample-mac.app */,
+				2CBA51AF189BC15400529073 /* libwebp.a */,
+				2CBA51D6189BC25100529073 /* libwebp.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -338,11 +458,16 @@
 		2C605BB11727CEE500CE8626 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CBA519D189A8BCA00529073 /* QuartzCore.framework */,
+				2CBA519B189A8BC300529073 /* Foundation.framework */,
+				2CBA5199189A8BBE00529073 /* AppKit.framework */,
+				2CEFFD2B189A4B2300ABA059 /* QuartzCore.framework */,
 				2C605BB21727CEE500CE8626 /* UIKit.framework */,
 				2C605BB41727CEE500CE8626 /* Foundation.framework */,
 				2C605BB61727CEE500CE8626 /* CoreGraphics.framework */,
-				2CE5C691172C83EF00CB54A5 /* Cocoa.framework */,
-				2CE5C693172C83EF00CB54A5 /* Other Frameworks */,
+				2CBA51BD189BC15400529073 /* XCTest.framework */,
+				2CBA51D7189BC25200529073 /* Cocoa.framework */,
+				2CBA51D9189BC25200529073 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -398,6 +523,36 @@
 			path = "STWebPDecoderExample-mac";
 			sourceTree = "<group>";
 			usesTabs = 1;
+		};
+		2CBA519F189B984700529073 /* STWebPEncoder */ = {
+			isa = PBXGroup;
+			children = (
+				2CBA51A0189B99EE00529073 /* STWebPEncoder.h */,
+				2CBA51A1189B99EE00529073 /* STWebPEncoder.m */,
+			);
+			name = STWebPEncoder;
+			path = STWebPDecoder;
+			sourceTree = "<group>";
+		};
+		2CBA51A5189B9A0400529073 /* STWebP */ = {
+			isa = PBXGroup;
+			children = (
+				2CBA51A6189B9A1400529073 /* STWebP.h */,
+				2CBA51A7189B9A1400529073 /* STWebP.m */,
+			);
+			name = STWebP;
+			path = STWebPDecoder;
+			sourceTree = "<group>";
+		};
+		2CBA51D9189BC25200529073 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CBA51DA189BC25200529073 /* Foundation.framework */,
+				2CBA51DB189BC25200529073 /* CoreData.framework */,
+				2CBA51DC189BC25200529073 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
 		};
 		2CE3F541172A8C8D00FC9B99 /* libwebp */ = {
 			isa = PBXGroup;
@@ -564,22 +719,18 @@
 			path = webp;
 			sourceTree = "<group>";
 		};
-		2CE5C693172C83EF00CB54A5 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2CE5C694172C83EF00CB54A5 /* AppKit.framework */,
-				2CE5C695172C83EF00CB54A5 /* CoreData.framework */,
-				2CE5C696172C83EF00CB54A5 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
 		2CFC2D23172BD74300893638 /* STWebPDecoder */ = {
 			isa = PBXGroup;
 			children = (
+				2CBA52A2189BCB3600529073 /* STWebPImage.h */,
+				2C772924189A5F9A002DD2B2 /* STWebPImage+Internal.h */,
+				2C77291B189A5C96002DD2B2 /* STWebPImage-iOS.m */,
+				2C772920189A5D40002DD2B2 /* STWebPImage-mac.m */,
 				2CFC2D26172BD74300893638 /* STWebPDecoder.h */,
-				2CFC2D28172BD74300893638 /* STWebPDecoder-iOS.m */,
-				2CB9CC29172C85EC0054BC07 /* STWebPDecoder-mac.m */,
+				2C96A953189A8A3C005CAD72 /* STWebPDecoder.m */,
+				2CBA52A1189BCA6900529073 /* STWebPStreamingDecoder.h */,
+				2CFC2D28172BD74300893638 /* STWebPStreamingDecoder-iOS.m */,
+				2CB9CC29172C85EC0054BC07 /* STWebPStreamingDecoder-mac.m */,
 				2C5BD00C173157D2006B6AC5 /* STWebPURLProtocol.h */,
 				2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */,
 			);
@@ -590,13 +741,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2CBA51D4189BC25100529073 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CE5C68E172C83EF00CB54A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2CCC346E17F040E600EC7B66 /* alpha_processing.h in Headers */,
 				2CCF47F51747174000BBE8A2 /* STWebPDecoder.h in Headers */,
+				2CBA51A2189B99EE00529073 /* STWebPEncoder.h in Headers */,
 				2C61728F187AC82D0082C342 /* random.h in Headers */,
+				2CBA51A8189B9A1400529073 /* STWebP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +774,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2CBA529C189BC36500529073 /* PBXTargetDependency */,
 				2CFC2D2E172BD81A00893638 /* PBXTargetDependency */,
 			);
 			name = "STWebPDecoderExample-iOS";
@@ -632,12 +793,47 @@
 			buildRules = (
 			);
 			dependencies = (
+				2CBA529E189BC36B00529073 /* PBXTargetDependency */,
 				2CB9CC48172C87120054BC07 /* PBXTargetDependency */,
 			);
 			name = "STWebPDecoderExample-mac";
 			productName = "STWebPDecoderExample-mac";
 			productReference = 2CB9CC30172C86E10054BC07 /* STWebPDecoderExample-mac.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2CBA51AE189BC15400529073 /* libwebp-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CBA51CC189BC15400529073 /* Build configuration list for PBXNativeTarget "libwebp-iOS" */;
+			buildPhases = (
+				2CBA51AB189BC15400529073 /* Sources */,
+				2CBA51AC189BC15400529073 /* Frameworks */,
+				2CBA51AD189BC15400529073 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libwebp-iOS";
+			productName = webp;
+			productReference = 2CBA51AF189BC15400529073 /* libwebp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2CBA51D5189BC25100529073 /* libwebp-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CBA51F5189BC25200529073 /* Build configuration list for PBXNativeTarget "libwebp-mac" */;
+			buildPhases = (
+				2CBA51D2189BC25100529073 /* Sources */,
+				2CBA51D3189BC25100529073 /* Frameworks */,
+				2CBA51D4189BC25100529073 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libwebp-mac";
+			productName = webp;
+			productReference = 2CBA51D6189BC25100529073 /* libwebp.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		2CE5C68F172C83EF00CB54A5 /* STWebPDecoder-mac */ = {
 			isa = PBXNativeTarget;
@@ -699,6 +895,8 @@
 				2CE5C68F172C83EF00CB54A5 /* STWebPDecoder-mac */,
 				2C605BAE1727CEE500CE8626 /* STWebPDecoderExample-iOS */,
 				2CB9CC2F172C86E10054BC07 /* STWebPDecoderExample-mac */,
+				2CBA51AE189BC15400529073 /* libwebp-iOS */,
+				2CBA51D5189BC25100529073 /* libwebp-mac */,
 			);
 		};
 /* End PBXProject section */
@@ -754,45 +952,143 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CBA51AB189BC15400529073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBA525A189BC34A00529073 /* tree.c in Sources */,
+				2CBA5244189BC34A00529073 /* dec.c in Sources */,
+				2CBA5246189BC34A00529073 /* dec_sse2.c in Sources */,
+				2CBA5240189BC34A00529073 /* vp8l.c in Sources */,
+				2CBA523F189BC34A00529073 /* vp8.c in Sources */,
+				2CBA523C189BC34A00529073 /* layer.c in Sources */,
+				2CBA5249189BC34A00529073 /* upsampling_neon.c in Sources */,
+				2CBA524E189BC34A00529073 /* backward_references.c in Sources */,
+				2CBA5245189BC34A00529073 /* dec_neon.c in Sources */,
+				2CBA5250189BC34A00529073 /* cost.c in Sources */,
+				2CBA5259189BC34A00529073 /* token.c in Sources */,
+				2CBA525C189BC34A00529073 /* webpenc.c in Sources */,
+				2CBA524D189BC34A00529073 /* analysis.c in Sources */,
+				2CBA5253189BC34A00529073 /* histogram.c in Sources */,
+				2CBA526A189BC34A00529073 /* rescaler.c in Sources */,
+				2CBA51FF189BC31300529073 /* enc_neon.c in Sources */,
+				2CBA5247189BC34A00529073 /* lossless.c in Sources */,
+				2CBA5200189BC31300529073 /* enc_sse2.c in Sources */,
+				2CBA5251189BC34A00529073 /* filter.c in Sources */,
+				2CBA5262189BC34A00529073 /* bit_writer.c in Sources */,
+				2CBA5237189BC34A00529073 /* alpha.c in Sources */,
+				2CBA5239189BC34A00529073 /* frame.c in Sources */,
+				2CBA525D189BC34A00529073 /* muxedit.c in Sources */,
+				2CBA5241189BC34A00529073 /* webp.c in Sources */,
+				2CBA524C189BC34A00529073 /* alpha.c in Sources */,
+				2CBA526B189BC34A00529073 /* thread.c in Sources */,
+				2CBA5248189BC34A00529073 /* upsampling.c in Sources */,
+				2CBA5238189BC34A00529073 /* buffer.c in Sources */,
+				2CBA525E189BC34A00529073 /* muxinternal.c in Sources */,
+				2CBA523B189BC34A00529073 /* io.c in Sources */,
+				2CBA526C189BC34A00529073 /* utils.c in Sources */,
+				2CBA5254189BC34A00529073 /* iterator.c in Sources */,
+				2CBA525B189BC34A00529073 /* vp8l.c in Sources */,
+				2CBA523D189BC34A00529073 /* quant.c in Sources */,
+				2CBA5261189BC34A00529073 /* bit_reader.c in Sources */,
+				2CBA5263189BC34A00529073 /* color_cache.c in Sources */,
+				2CBA5268189BC34A00529073 /* quant_levels_dec.c in Sources */,
+				2CBA5258189BC34A00529073 /* syntax.c in Sources */,
+				2CBA524A189BC34A00529073 /* upsampling_sse2.c in Sources */,
+				2CBA5264189BC34A00529073 /* filters.c in Sources */,
+				2CBA525F189BC34A00529073 /* muxread.c in Sources */,
+				2CBA524B189BC34A00529073 /* yuv.c in Sources */,
+				2CBA5260189BC34A00529073 /* alpha_processing.c in Sources */,
+				2CBA5269189BC34A00529073 /* random.c in Sources */,
+				2CBA5252189BC34A00529073 /* frame.c in Sources */,
+				2CBA5255189BC34A00529073 /* layer.c in Sources */,
+				2CBA523A189BC34A00529073 /* idec.c in Sources */,
+				2CBA524F189BC34A00529073 /* config.c in Sources */,
+				2CBA5242189BC34A00529073 /* demux.c in Sources */,
+				2CBA523E189BC34A00529073 /* tree.c in Sources */,
+				2CBA5265189BC34A00529073 /* huffman.c in Sources */,
+				2CBA5267189BC34A00529073 /* quant_levels.c in Sources */,
+				2CBA5243189BC34A00529073 /* cpu.c in Sources */,
+				2CBA5257189BC34A00529073 /* quant.c in Sources */,
+				2CBA51FB189BC30D00529073 /* enc.c in Sources */,
+				2CBA5256189BC34A00529073 /* picture.c in Sources */,
+				2CBA5266189BC34A00529073 /* huffman_encode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBA51D2189BC25100529073 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CBA5224189BC34900529073 /* tree.c in Sources */,
+				2CBA520E189BC34900529073 /* dec.c in Sources */,
+				2CBA5210189BC34900529073 /* dec_sse2.c in Sources */,
+				2CBA520A189BC34900529073 /* vp8l.c in Sources */,
+				2CBA5209189BC34900529073 /* vp8.c in Sources */,
+				2CBA5206189BC34900529073 /* layer.c in Sources */,
+				2CBA5213189BC34900529073 /* upsampling_neon.c in Sources */,
+				2CBA5218189BC34900529073 /* backward_references.c in Sources */,
+				2CBA520F189BC34900529073 /* dec_neon.c in Sources */,
+				2CBA521A189BC34900529073 /* cost.c in Sources */,
+				2CBA5223189BC34900529073 /* token.c in Sources */,
+				2CBA5226189BC34900529073 /* webpenc.c in Sources */,
+				2CBA5217189BC34900529073 /* analysis.c in Sources */,
+				2CBA521D189BC34900529073 /* histogram.c in Sources */,
+				2CBA5234189BC34900529073 /* rescaler.c in Sources */,
+				2CBA51FD189BC31200529073 /* enc_neon.c in Sources */,
+				2CBA5211189BC34900529073 /* lossless.c in Sources */,
+				2CBA51FE189BC31200529073 /* enc_sse2.c in Sources */,
+				2CBA521B189BC34900529073 /* filter.c in Sources */,
+				2CBA522C189BC34900529073 /* bit_writer.c in Sources */,
+				2CBA5201189BC34900529073 /* alpha.c in Sources */,
+				2CBA5203189BC34900529073 /* frame.c in Sources */,
+				2CBA5227189BC34900529073 /* muxedit.c in Sources */,
+				2CBA520B189BC34900529073 /* webp.c in Sources */,
+				2CBA5216189BC34900529073 /* alpha.c in Sources */,
+				2CBA5235189BC34900529073 /* thread.c in Sources */,
+				2CBA5212189BC34900529073 /* upsampling.c in Sources */,
+				2CBA5202189BC34900529073 /* buffer.c in Sources */,
+				2CBA5228189BC34900529073 /* muxinternal.c in Sources */,
+				2CBA5205189BC34900529073 /* io.c in Sources */,
+				2CBA5236189BC34900529073 /* utils.c in Sources */,
+				2CBA521E189BC34900529073 /* iterator.c in Sources */,
+				2CBA5225189BC34900529073 /* vp8l.c in Sources */,
+				2CBA5207189BC34900529073 /* quant.c in Sources */,
+				2CBA522B189BC34900529073 /* bit_reader.c in Sources */,
+				2CBA522D189BC34900529073 /* color_cache.c in Sources */,
+				2CBA5232189BC34900529073 /* quant_levels_dec.c in Sources */,
+				2CBA5222189BC34900529073 /* syntax.c in Sources */,
+				2CBA5214189BC34900529073 /* upsampling_sse2.c in Sources */,
+				2CBA522E189BC34900529073 /* filters.c in Sources */,
+				2CBA5229189BC34900529073 /* muxread.c in Sources */,
+				2CBA5215189BC34900529073 /* yuv.c in Sources */,
+				2CBA522A189BC34900529073 /* alpha_processing.c in Sources */,
+				2CBA5233189BC34900529073 /* random.c in Sources */,
+				2CBA521C189BC34900529073 /* frame.c in Sources */,
+				2CBA521F189BC34900529073 /* layer.c in Sources */,
+				2CBA5204189BC34900529073 /* idec.c in Sources */,
+				2CBA5219189BC34900529073 /* config.c in Sources */,
+				2CBA520C189BC34900529073 /* demux.c in Sources */,
+				2CBA5208189BC34900529073 /* tree.c in Sources */,
+				2CBA522F189BC34900529073 /* huffman.c in Sources */,
+				2CBA5231189BC34900529073 /* quant_levels.c in Sources */,
+				2CBA520D189BC34900529073 /* cpu.c in Sources */,
+				2CBA5221189BC34900529073 /* quant.c in Sources */,
+				2CBA51FC189BC30D00529073 /* enc.c in Sources */,
+				2CBA5220189BC34900529073 /* picture.c in Sources */,
+				2CBA5230189BC34900529073 /* huffman_encode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2CE5C68C172C83EF00CB54A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE5C6A1172C847D00CB54A5 /* alpha.c in Sources */,
-				2CE5C6A2172C847D00CB54A5 /* buffer.c in Sources */,
-				2CE5C6A3172C847D00CB54A5 /* frame.c in Sources */,
-				2C61728E187AC82D0082C342 /* random.c in Sources */,
-				2CE5C6A4172C847D00CB54A5 /* idec.c in Sources */,
-				2CE5C6A5172C847D00CB54A5 /* io.c in Sources */,
-				2CE5C6A6172C847D00CB54A5 /* layer.c in Sources */,
-				2CE5C6A7172C847D00CB54A5 /* quant.c in Sources */,
-				2CE5C6A8172C847D00CB54A5 /* tree.c in Sources */,
-				2CE5C6A9172C847D00CB54A5 /* vp8.c in Sources */,
-				2CE5C6AA172C847D00CB54A5 /* vp8l.c in Sources */,
-				2CE5C6AB172C847D00CB54A5 /* webp.c in Sources */,
-				2CE5C6AC172C848100CB54A5 /* demux.c in Sources */,
-				2CE5C6AD172C849000CB54A5 /* cpu.c in Sources */,
-				2CE5C6AE172C849000CB54A5 /* dec.c in Sources */,
-				2CE5C6AF172C849000CB54A5 /* dec_neon.c in Sources */,
-				2CE5C6B0172C849000CB54A5 /* dec_sse2.c in Sources */,
-				2CE5C6B1172C849500CB54A5 /* lossless.c in Sources */,
-				2CE5C6B2172C849900CB54A5 /* upsampling.c in Sources */,
-				2CE5C6B3172C849900CB54A5 /* upsampling_neon.c in Sources */,
-				2CE5C6B4172C849900CB54A5 /* upsampling_sse2.c in Sources */,
-				2CE5C6B5172C849900CB54A5 /* yuv.c in Sources */,
-				2CE5C6B6172C84FB00CB54A5 /* bit_reader.c in Sources */,
-				2CE5C6B7172C84FB00CB54A5 /* bit_writer.c in Sources */,
-				2CE5C6B8172C84FB00CB54A5 /* color_cache.c in Sources */,
-				2CE5C6B9172C84FB00CB54A5 /* filters.c in Sources */,
-				2CE5C6BA172C84FB00CB54A5 /* huffman.c in Sources */,
-				2CE5C6BB172C84FB00CB54A5 /* huffman_encode.c in Sources */,
-				2CE5C6BC172C84FB00CB54A5 /* quant_levels.c in Sources */,
-				2CE5C6BD172C84FB00CB54A5 /* quant_levels_dec.c in Sources */,
-				2CCC346D17F040E600EC7B66 /* alpha_processing.c in Sources */,
-				2CE5C6BE172C84FB00CB54A5 /* rescaler.c in Sources */,
-				2CE5C6BF172C84FB00CB54A5 /* thread.c in Sources */,
-				2CE5C6C0172C84FB00CB54A5 /* utils.c in Sources */,
-				2CB9CC2B172C85EC0054BC07 /* STWebPDecoder-mac.m in Sources */,
+				2CBA51AA189B9A1400529073 /* STWebP.m in Sources */,
+				2CBA51A4189B99EE00529073 /* STWebPEncoder.m in Sources */,
+				2C96A956189A8A3C005CAD72 /* STWebPDecoder.m in Sources */,
+				2C772923189A5D40002DD2B2 /* STWebPImage-mac.m in Sources */,
+				2CB9CC2B172C85EC0054BC07 /* STWebPStreamingDecoder-mac.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,41 +1096,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CFC2D29172BD74300893638 /* STWebPDecoder-iOS.m in Sources */,
-				2CFC2D30172BD99000893638 /* alpha.c in Sources */,
-				2CFC2D31172BD99000893638 /* buffer.c in Sources */,
-				2CFC2D32172BD99000893638 /* frame.c in Sources */,
-				2CFC2D33172BD99000893638 /* idec.c in Sources */,
-				2CFC2D34172BD99000893638 /* io.c in Sources */,
-				2CFC2D35172BD99000893638 /* layer.c in Sources */,
-				2CFC2D36172BD99000893638 /* quant.c in Sources */,
-				2CFC2D37172BD99000893638 /* tree.c in Sources */,
-				2CFC2D38172BD99000893638 /* vp8.c in Sources */,
-				2CFC2D39172BD99000893638 /* vp8l.c in Sources */,
-				2CFC2D3A172BD99000893638 /* webp.c in Sources */,
-				2CFC2D3B172BD99000893638 /* demux.c in Sources */,
-				2CFC2D3C172BD99000893638 /* cpu.c in Sources */,
-				2CFC2D3D172BD99000893638 /* dec.c in Sources */,
-				2CFC2D3E172BD99000893638 /* dec_neon.c in Sources */,
-				2CFC2D3F172BD99000893638 /* dec_sse2.c in Sources */,
-				2CFC2D44172BD99000893638 /* upsampling.c in Sources */,
-				2CFC2D45172BD99000893638 /* upsampling_neon.c in Sources */,
-				2CCC346C17F040E600EC7B66 /* alpha_processing.c in Sources */,
-				2CFC2D46172BD99000893638 /* upsampling_sse2.c in Sources */,
-				2CFC2D47172BD99000893638 /* yuv.c in Sources */,
-				2C61728D187AC82D0082C342 /* random.c in Sources */,
-				2CFC2D5C172BD99000893638 /* bit_reader.c in Sources */,
-				2CFC2D5D172BD99000893638 /* bit_writer.c in Sources */,
-				2CFC2D5E172BD99000893638 /* color_cache.c in Sources */,
-				2CFC2D5F172BD99000893638 /* filters.c in Sources */,
-				2CFC2D60172BD99000893638 /* huffman.c in Sources */,
-				2CFC2D61172BD99000893638 /* huffman_encode.c in Sources */,
-				2CFC2D62172BD99000893638 /* quant_levels.c in Sources */,
-				2CFC2D63172BD99000893638 /* quant_levels_dec.c in Sources */,
-				2CFC2D64172BD99000893638 /* rescaler.c in Sources */,
-				2CFC2D65172BD99000893638 /* thread.c in Sources */,
-				2CFC2D66172BD99000893638 /* utils.c in Sources */,
-				2CFC2D67172BDD5A00893638 /* lossless.c in Sources */,
+				2CFC2D29172BD74300893638 /* STWebPStreamingDecoder-iOS.m in Sources */,
+				2C77291D189A5C96002DD2B2 /* STWebPImage-iOS.m in Sources */,
+				2CBA51A3189B99EE00529073 /* STWebPEncoder.m in Sources */,
+				2CBA51A9189B9A1400529073 /* STWebP.m in Sources */,
+				2C96A955189A8A3C005CAD72 /* STWebPDecoder.m in Sources */,
 				2C5BD00F173157D2006B6AC5 /* STWebPURLProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -846,6 +1112,16 @@
 			isa = PBXTargetDependency;
 			target = 2CE5C68F172C83EF00CB54A5 /* STWebPDecoder-mac */;
 			targetProxy = 2CB9CC47172C87120054BC07 /* PBXContainerItemProxy */;
+		};
+		2CBA529C189BC36500529073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CBA51AE189BC15400529073 /* libwebp-iOS */;
+			targetProxy = 2CBA529B189BC36500529073 /* PBXContainerItemProxy */;
+		};
+		2CBA529E189BC36B00529073 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CBA51D5189BC25100529073 /* libwebp-mac */;
+			targetProxy = 2CBA529D189BC36B00529073 /* PBXContainerItemProxy */;
 		};
 		2CFC2D2E172BD81A00893638 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -883,6 +1159,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -891,6 +1168,8 @@
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -906,11 +1185,13 @@
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
@@ -933,6 +1214,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -941,6 +1223,8 @@
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -949,11 +1233,13 @@
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -991,7 +1277,6 @@
 		2CB9CC45172C86E20054BC07 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1010,7 +1295,6 @@
 		2CB9CC46172C86E20054BC07 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1027,10 +1311,52 @@
 			};
 			name = Release;
 		};
+		2CBA51CD189BC15400529073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				DSTROOT = /tmp/webp.dst;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				PRODUCT_NAME = webp;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2CBA51CE189BC15400529073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				DSTROOT = /tmp/webp.dst;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				PRODUCT_NAME = webp;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2CBA51F6189BC25200529073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				PRODUCT_NAME = webp;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2CBA51F7189BC25200529073 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				PRODUCT_NAME = webp;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		2CE5C69D172C83EF00CB54A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -1047,7 +1373,6 @@
 		2CE5C69E172C83EF00CB54A5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1113,6 +1438,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2CBA51CC189BC15400529073 /* Build configuration list for PBXNativeTarget "libwebp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CBA51CD189BC15400529073 /* Debug */,
+				2CBA51CE189BC15400529073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CBA51F5189BC25200529073 /* Build configuration list for PBXNativeTarget "libwebp-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CBA51F6189BC25200529073 /* Debug */,
+				2CBA51F7189BC25200529073 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		2CE5C69F172C83EF00CB54A5 /* Build configuration list for PBXNativeTarget "STWebPDecoder-mac" */ = {
 			isa = XCConfigurationList;
