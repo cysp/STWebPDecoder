@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2CFC2D20172BD74300893638"
                BuildableName = "libSTWebPDecoder.a"
-               BlueprintName = "STWebPDecoder-iOS"
-               ReferencedContainer = "container:STWebPDecoder.xcodeproj">
+               BlueprintName = "STWebP-iOS"
+               ReferencedContainer = "container:STWebP.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

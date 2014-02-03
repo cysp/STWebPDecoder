@@ -1,4 +1,4 @@
-PROJECTNAME = 'STWebPDecoder'.freeze
+PROJECTNAME = 'STWebP'.freeze
 
 begin
   require 'bundler'
