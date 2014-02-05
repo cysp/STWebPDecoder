@@ -2,3 +2,6 @@
 	path = lib/libwebp
 	url = https://github.com/cysp/libwebp.git
 	branch = 0.4.0
+[submodule "libwebp-test-data"]
+	path = libwebp-test-data
+	url = https://chromium.googlesource.com/webm/libwebp-test-data

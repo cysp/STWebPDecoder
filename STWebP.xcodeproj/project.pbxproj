@@ -7,11 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0EC12E18A2279200C47CC0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA51BD189BC15400529073 /* XCTest.framework */; };
+		2C0EC13618A2279200C47CC0 /* STWebPDecoderTests-mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EC13518A2279200C47CC0 /* STWebPDecoderTests-mac.m */; };
+		2C0EC13F18A2280800C47CC0 /* libwebp-test-data in Resources */ = {isa = PBXBuildFile; fileRef = 2C0EC13E18A2280800C47CC0 /* libwebp-test-data */; };
+		2C0EC14018A22ED100C47CC0 /* libSTWebP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE5C690172C83EF00CB54A5 /* libSTWebP.a */; };
+		2C0EC14118A22EDC00C47CC0 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA51D6189BC25100529073 /* libwebp.a */; };
+		2C0EC14718A2426100C47CC0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA51BD189BC15400529073 /* XCTest.framework */; };
+		2C0EC14918A2426100C47CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB21727CEE500CE8626 /* UIKit.framework */; };
+		2C0EC15118A2426100C47CC0 /* STWebPDecoderTests-iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0EC15018A2426100C47CC0 /* STWebPDecoderTests-iOS.m */; };
+		2C0EC15818A242A700C47CC0 /* libwebp-test-data in Resources */ = {isa = PBXBuildFile; fileRef = 2C0EC13E18A2280800C47CC0 /* libwebp-test-data */; };
+		2C0EC15918A2437100C47CC0 /* libSTWebP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFC2D21172BD74300893638 /* libSTWebP.a */; };
+		2C0EC15A18A2437400C47CC0 /* libwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA51AF189BC15400529073 /* libwebp.a */; };
 		2C5BD00F173157D2006B6AC5 /* STWebPURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */; };
 		2C5BD01317327425006B6AC5 /* STWebPWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5BD01217327425006B6AC5 /* STWebPWebViewController.m */; };
 		2C605BB31727CEE500CE8626 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB21727CEE500CE8626 /* UIKit.framework */; };
 		2C605BB51727CEE500CE8626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB41727CEE500CE8626 /* Foundation.framework */; };
-		2C605BB71727CEE500CE8626 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C605BB61727CEE500CE8626 /* CoreGraphics.framework */; };
 		2C605BBF1727CEE500CE8626 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C605BBE1727CEE500CE8626 /* main.m */; };
 		2C605BC31727CEE500CE8626 /* STAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C605BC21727CEE500CE8626 /* STAppDelegate.m */; };
 		2C605BC51727CEE500CE8626 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BC41727CEE500CE8626 /* Default.png */; };
@@ -24,6 +34,8 @@
 		2C751345172C8B020036F82B /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BDB1727E33B00CE8626 /* 4.jpg */; };
 		2C751346172C8B020036F82B /* 4.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BD71727DA9700CE8626 /* 4.webp */; };
 		2C751347172C8B020036F82B /* 5_webp_a.webp in Resources */ = {isa = PBXBuildFile; fileRef = 2C605BD91727E1D000CE8626 /* 5_webp_a.webp */; };
+		2C7D692E18A251160067B4A5 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA5199189A8BBE00529073 /* AppKit.framework */; };
+		2C7D693018A2666A0067B4A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7D692F18A2666A0067B4A5 /* CoreGraphics.framework */; };
 		2CB9CC2B172C85EC0054BC07 /* STWebPDecoder-mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9CC29172C85EC0054BC07 /* STWebPDecoder-mac.m */; };
 		2CB9CC39172C86E10054BC07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB9CC38172C86E10054BC07 /* main.m */; };
 		2CB9CC3D172C86E10054BC07 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9CC3B172C86E10054BC07 /* Credits.rtf */; };
@@ -31,7 +43,6 @@
 		2CB9CC43172C86E20054BC07 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB9CC41172C86E20054BC07 /* MainMenu.xib */; };
 		2CB9CC49172C87170054BC07 /* libSTWebP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE5C690172C83EF00CB54A5 /* libSTWebP.a */; };
 		2CBA519A189A8BBE00529073 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA5199189A8BBE00529073 /* AppKit.framework */; };
-		2CBA519C189A8BC300529073 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA519B189A8BC300529073 /* Foundation.framework */; };
 		2CBA519E189A8BCA00529073 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CBA519D189A8BCA00529073 /* QuartzCore.framework */; };
 		2CBA51FB189BC30D00529073 /* enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57C172A8CDE00FC9B99 /* enc.c */; };
 		2CBA51FC189BC30D00529073 /* enc.c in Sources */ = {isa = PBXBuildFile; fileRef = 2CE3F57C172A8CDE00FC9B99 /* enc.c */; };
@@ -156,13 +167,26 @@
 		2CBA52BA189F9FC900529073 /* STWebPStreamingDecoder-mac.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBA52B5189F9FC900529073 /* STWebPStreamingDecoder-mac.m */; };
 		2CBA52BB189F9FC900529073 /* STWebPStreamingDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CBA52B6189F9FC900529073 /* STWebPStreamingDecoder.h */; };
 		2CCF47F51747174000BBE8A2 /* STWebPDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CFC2D26172BD74300893638 /* STWebPDecoder.h */; };
-		2CEFFD2C189A4B2300ABA059 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CEFFD2B189A4B2300ABA059 /* QuartzCore.framework */; };
 		2CFC2D27172BD74300893638 /* STWebPDecoder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2CFC2D26172BD74300893638 /* STWebPDecoder.h */; };
 		2CFC2D29172BD74300893638 /* STWebPDecoder-iOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC2D28172BD74300893638 /* STWebPDecoder-iOS.m */; };
 		2CFC2D2F172BD81D00893638 /* libSTWebP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFC2D21172BD74300893638 /* libSTWebP.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2C0EC13818A2279200C47CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C605BA71727CEE500CE8626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CE5C68F172C83EF00CB54A5;
+			remoteInfo = "STWebP-mac";
+		};
+		2C0EC15318A2426100C47CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C605BA71727CEE500CE8626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CFC2D20172BD74300893638;
+			remoteInfo = "STWebP-iOS";
+		};
 		2CB9CC47172C87120054BC07 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2C605BA71727CEE500CE8626 /* Project object */;
@@ -216,6 +240,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C0EC12D18A2279200C47CC0 /* STWebPDecoderTests-mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STWebPDecoderTests-mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0EC13118A2279200C47CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0EC13518A2279200C47CC0 /* STWebPDecoderTests-mac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "STWebPDecoderTests-mac.m"; sourceTree = "<group>"; };
+		2C0EC13E18A2280800C47CC0 /* libwebp-test-data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "libwebp-test-data"; sourceTree = SOURCE_ROOT; };
+		2C0EC14618A2426100C47CC0 /* STWebPDecoderTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STWebPDecoderTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0EC15018A2426100C47CC0 /* STWebPDecoderTests-iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "STWebPDecoderTests-iOS.m"; sourceTree = "<group>"; };
 		2C5BD00C173157D2006B6AC5 /* STWebPURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWebPURLProtocol.h; sourceTree = "<group>"; };
 		2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWebPURLProtocol.m; sourceTree = "<group>"; };
 		2C5BD01117327425006B6AC5 /* STWebPWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWebPWebViewController.h; sourceTree = "<group>"; };
@@ -223,7 +253,6 @@
 		2C605BAF1727CEE500CE8626 /* STWebPDecoderExample-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STWebPDecoderExample-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C605BB21727CEE500CE8626 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2C605BB41727CEE500CE8626 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2C605BB61727CEE500CE8626 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2C605BBA1727CEE500CE8626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C605BBE1727CEE500CE8626 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C605BC11727CEE500CE8626 /* STAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STAppDelegate.h; sourceTree = "<group>"; };
@@ -238,6 +267,7 @@
 		2C605BDB1727E33B00CE8626 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		2C61728B187AC82D0082C342 /* random.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = random.c; sourceTree = "<group>"; };
 		2C61728C187AC82D0082C342 /* random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
+		2C7D692F18A2666A0067B4A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2CB9CC29172C85EC0054BC07 /* STWebPDecoder-mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STWebPDecoder-mac.m"; sourceTree = "<group>"; };
 		2CB9CC30172C86E10054BC07 /* STWebPDecoderExample-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "STWebPDecoderExample-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB9CC34172C86E10054BC07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -246,16 +276,11 @@
 		2CB9CC3E172C86E10054BC07 /* STAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STAppDelegate.h; sourceTree = "<group>"; };
 		2CB9CC3F172C86E10054BC07 /* STAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STAppDelegate.m; sourceTree = "<group>"; };
 		2CB9CC42172C86E20054BC07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		2CBA5199189A8BBE00529073 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
-		2CBA519B189A8BC300529073 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2CBA5199189A8BBE00529073 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2CBA519D189A8BCA00529073 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		2CBA51AF189BC15400529073 /* libwebp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwebp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CBA51BD189BC15400529073 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2CBA51D6189BC25100529073 /* libwebp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libwebp.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CBA51D7189BC25200529073 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		2CBA51DA189BC25200529073 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2CBA51DB189BC25200529073 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		2CBA51DC189BC25200529073 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2CBA52AA189F9F1300529073 /* STWebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWebP.h; sourceTree = "<group>"; };
 		2CBA52AB189F9F1300529073 /* STWebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWebP.m; sourceTree = "<group>"; };
 		2CBA52B4189F9FC900529073 /* STWebPStreamingDecoder-iOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "STWebPStreamingDecoder-iOS.m"; sourceTree = "<group>"; };
@@ -350,21 +375,41 @@
 		2CE3F5CC172A8CDE00FC9B99 /* mux_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mux_types.h; sourceTree = "<group>"; };
 		2CE3F5CD172A8CDE00FC9B99 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
 		2CE5C690172C83EF00CB54A5 /* libSTWebP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTWebP.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CEFFD2B189A4B2300ABA059 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2CFC2D21172BD74300893638 /* libSTWebP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTWebP.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFC2D26172BD74300893638 /* STWebPDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STWebPDecoder.h; sourceTree = "<group>"; };
 		2CFC2D28172BD74300893638 /* STWebPDecoder-iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "STWebPDecoder-iOS.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2C0EC12A18A2279200C47CC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7D692E18A251160067B4A5 /* AppKit.framework in Frameworks */,
+				2C0EC12E18A2279200C47CC0 /* XCTest.framework in Frameworks */,
+				2C0EC14018A22ED100C47CC0 /* libSTWebP.a in Frameworks */,
+				2C0EC14118A22EDC00C47CC0 /* libwebp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0EC14318A2426100C47CC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7D693018A2666A0067B4A5 /* CoreGraphics.framework in Frameworks */,
+				2C0EC14918A2426100C47CC0 /* UIKit.framework in Frameworks */,
+				2C0EC14718A2426100C47CC0 /* XCTest.framework in Frameworks */,
+				2C0EC15918A2437100C47CC0 /* libSTWebP.a in Frameworks */,
+				2C0EC15A18A2437400C47CC0 /* libwebp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C605BAC1727CEE500CE8626 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2C605BB31727CEE500CE8626 /* UIKit.framework in Frameworks */,
 				2C605BB51727CEE500CE8626 /* Foundation.framework in Frameworks */,
-				2C605BB71727CEE500CE8626 /* CoreGraphics.framework in Frameworks */,
-				2CEFFD2C189A4B2300ABA059 /* QuartzCore.framework in Frameworks */,
 				2CFC2D2F172BD81D00893638 /* libSTWebP.a in Frameworks */,
 				2CBA52A0189BC37700529073 /* libwebp.a in Frameworks */,
 			);
@@ -374,7 +419,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CBA519C189A8BC300529073 /* Foundation.framework in Frameworks */,
 				2CBA519A189A8BBE00529073 /* AppKit.framework in Frameworks */,
 				2CBA519E189A8BCA00529073 /* QuartzCore.framework in Frameworks */,
 				2CB9CC49172C87170054BC07 /* libSTWebP.a in Frameworks */,
@@ -413,10 +457,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C0EC12F18A2279200C47CC0 /* STWebPDecoderTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C0EC13118A2279200C47CC0 /* Info.plist */,
+				2C0EC13E18A2280800C47CC0 /* libwebp-test-data */,
+				2C0EC15018A2426100C47CC0 /* STWebPDecoderTests-iOS.m */,
+				2C0EC13518A2279200C47CC0 /* STWebPDecoderTests-mac.m */,
+			);
+			path = STWebPDecoderTests;
+			sourceTree = "<group>";
+		};
 		2C605BA61727CEE500CE8626 = {
 			isa = PBXGroup;
 			children = (
 				2CFC2D23172BD74300893638 /* STWebP */,
+				2C0EC12F18A2279200C47CC0 /* STWebPDecoderTests */,
 				2C605BB81727CEE500CE8626 /* STWebPDecoderExample-iOS */,
 				2CB9CC32172C86E10054BC07 /* STWebPDecoderExample-mac */,
 				2C751344172C8AA20036F82B /* samples */,
@@ -435,6 +491,8 @@
 				2CB9CC30172C86E10054BC07 /* STWebPDecoderExample-mac.app */,
 				2CBA51AF189BC15400529073 /* libwebp.a */,
 				2CBA51D6189BC25100529073 /* libwebp.a */,
+				2C0EC12D18A2279200C47CC0 /* STWebPDecoderTests-mac.xctest */,
+				2C0EC14618A2426100C47CC0 /* STWebPDecoderTests-iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -442,16 +500,11 @@
 		2C605BB11727CEE500CE8626 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2CBA519D189A8BCA00529073 /* QuartzCore.framework */,
-				2CBA519B189A8BC300529073 /* Foundation.framework */,
-				2CBA5199189A8BBE00529073 /* AppKit.framework */,
-				2CEFFD2B189A4B2300ABA059 /* QuartzCore.framework */,
-				2C605BB21727CEE500CE8626 /* UIKit.framework */,
 				2C605BB41727CEE500CE8626 /* Foundation.framework */,
-				2C605BB61727CEE500CE8626 /* CoreGraphics.framework */,
+				2C7D692F18A2666A0067B4A5 /* CoreGraphics.framework */,
+				2C605BB21727CEE500CE8626 /* UIKit.framework */,
+				2CBA5199189A8BBE00529073 /* AppKit.framework */,
 				2CBA51BD189BC15400529073 /* XCTest.framework */,
-				2CBA51D7189BC25200529073 /* Cocoa.framework */,
-				2CBA51D9189BC25200529073 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -506,16 +559,6 @@
 			path = "STWebPDecoderExample-mac";
 			sourceTree = "<group>";
 			usesTabs = 1;
-		};
-		2CBA51D9189BC25200529073 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2CBA51DA189BC25200529073 /* Foundation.framework */,
-				2CBA51DB189BC25200529073 /* CoreData.framework */,
-				2CBA51DC189BC25200529073 /* AppKit.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
 		};
 		2CE3F541172A8C8D00FC9B99 /* libwebp */ = {
 			isa = PBXGroup;
@@ -724,6 +767,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2C0EC12C18A2279200C47CC0 /* STWebPDecoderTests-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C0EC13C18A2279200C47CC0 /* Build configuration list for PBXNativeTarget "STWebPDecoderTests-mac" */;
+			buildPhases = (
+				2C0EC12918A2279200C47CC0 /* Sources */,
+				2C0EC12A18A2279200C47CC0 /* Frameworks */,
+				2C0EC12B18A2279200C47CC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C0EC13918A2279200C47CC0 /* PBXTargetDependency */,
+			);
+			name = "STWebPDecoderTests-mac";
+			productName = "STWebPDecoderTests-mac";
+			productReference = 2C0EC12D18A2279200C47CC0 /* STWebPDecoderTests-mac.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C0EC14518A2426100C47CC0 /* STWebPDecoderTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C0EC15518A2426100C47CC0 /* Build configuration list for PBXNativeTarget "STWebPDecoderTests-iOS" */;
+			buildPhases = (
+				2C0EC14218A2426100C47CC0 /* Sources */,
+				2C0EC14318A2426100C47CC0 /* Frameworks */,
+				2C0EC14418A2426100C47CC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C0EC15418A2426100C47CC0 /* PBXTargetDependency */,
+			);
+			name = "STWebPDecoderTests-iOS";
+			productName = "STWebPDecoderTests-iOS";
+			productReference = 2C0EC14618A2426100C47CC0 /* STWebPDecoderTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2C605BAE1727CEE500CE8626 /* STWebPDecoderExample-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C605BCC1727CEE500CE8626 /* Build configuration list for PBXNativeTarget "STWebPDecoderExample-iOS" */;
@@ -839,6 +918,14 @@
 				CLASSPREFIX = STWebP;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Scott Talbot";
+				TargetAttributes = {
+					2C0EC12C18A2279200C47CC0 = {
+						TestTargetID = 2CE5C68F172C83EF00CB54A5;
+					};
+					2C0EC14518A2426100C47CC0 = {
+						TestTargetID = 2CFC2D20172BD74300893638;
+					};
+				};
 			};
 			buildConfigurationList = 2C605BAA1727CEE500CE8626 /* Build configuration list for PBXProject "STWebP" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -854,6 +941,8 @@
 			targets = (
 				2CFC2D20172BD74300893638 /* STWebP-iOS */,
 				2CE5C68F172C83EF00CB54A5 /* STWebP-mac */,
+				2C0EC14518A2426100C47CC0 /* STWebPDecoderTests-iOS */,
+				2C0EC12C18A2279200C47CC0 /* STWebPDecoderTests-mac */,
 				2C605BAE1727CEE500CE8626 /* STWebPDecoderExample-iOS */,
 				2CB9CC2F172C86E10054BC07 /* STWebPDecoderExample-mac */,
 				2CBA51AE189BC15400529073 /* libwebp-iOS */,
@@ -863,6 +952,22 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2C0EC12B18A2279200C47CC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0EC13F18A2280800C47CC0 /* libwebp-test-data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0EC14418A2426100C47CC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0EC15818A242A700C47CC0 /* libwebp-test-data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C605BAD1727CEE500CE8626 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -891,6 +996,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C0EC12918A2279200C47CC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0EC13618A2279200C47CC0 /* STWebPDecoderTests-mac.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0EC14218A2426100C47CC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C0EC15118A2426100C47CC0 /* STWebPDecoderTests-iOS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2C605BAB1727CEE500CE8626 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1063,6 +1184,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2C0EC13918A2279200C47CC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CE5C68F172C83EF00CB54A5 /* STWebP-mac */;
+			targetProxy = 2C0EC13818A2279200C47CC0 /* PBXContainerItemProxy */;
+		};
+		2C0EC15418A2426100C47CC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CFC2D20172BD74300893638 /* STWebP-iOS */;
+			targetProxy = 2C0EC15318A2426100C47CC0 /* PBXContainerItemProxy */;
+		};
 		2CB9CC48172C87120054BC07 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2CE5C68F172C83EF00CB54A5 /* STWebP-mac */;
@@ -1105,6 +1236,65 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2C0EC13A18A2279200C47CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = STWebPDecoderTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2C0EC13B18A2279200C47CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = STWebPDecoderTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		2C0EC15618A2426100C47CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				INFOPLIST_FILE = STWebPDecoderTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2C0EC15718A2426100C47CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				INFOPLIST_FILE = STWebPDecoderTests/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		2C605BCA1727CEE500CE8626 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1151,7 +1341,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = (
 					"-Wall",
@@ -1199,7 +1388,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WARNING_CFLAGS = (
@@ -1212,9 +1400,9 @@
 		2C605BCD1727CEE500CE8626 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = "STWebPDecoderExample-iOS/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1222,9 +1410,9 @@
 		2C605BCE1727CEE500CE8626 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = "STWebPDecoderExample-iOS/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1233,10 +1421,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "STWebPDecoderExample-mac/Info.plist";
@@ -1252,10 +1436,6 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
-				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				INFOPLIST_FILE = "STWebPDecoderExample-mac/Info.plist";
@@ -1274,6 +1454,7 @@
 				DSTROOT = /tmp/webp.dst;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				PRODUCT_NAME = webp;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1286,6 +1467,7 @@
 				DSTROOT = /tmp/webp.dst;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				PRODUCT_NAME = webp;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -1316,7 +1498,6 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = STWebP;
@@ -1333,7 +1514,6 @@
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
 				);
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = STWebP;
@@ -1348,6 +1528,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				PRODUCT_NAME = STWebP;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1358,6 +1539,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				PRODUCT_NAME = STWebP;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -1365,6 +1547,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C0EC13C18A2279200C47CC0 /* Build configuration list for PBXNativeTarget "STWebPDecoderTests-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C0EC13A18A2279200C47CC0 /* Debug */,
+				2C0EC13B18A2279200C47CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C0EC15518A2426100C47CC0 /* Build configuration list for PBXNativeTarget "STWebPDecoderTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C0EC15618A2426100C47CC0 /* Debug */,
+				2C0EC15718A2426100C47CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2C605BAA1727CEE500CE8626 /* Build configuration list for PBXProject "STWebP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

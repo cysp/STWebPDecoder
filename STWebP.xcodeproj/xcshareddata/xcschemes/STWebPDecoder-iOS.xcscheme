@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2CFC2D20172BD74300893638"
-               BuildableName = "libSTWebPDecoder.a"
+               BuildableName = "libSTWebP.a"
                BlueprintName = "STWebP-iOS"
                ReferencedContainer = "container:STWebP.xcodeproj">
             </BuildableReference>
@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2C0EC14518A2426100C47CC0"
+               BuildableName = "STWebPDecoderTests-iOS.xctest"
+               BlueprintName = "STWebPDecoderTests-iOS"
+               ReferencedContainer = "container:STWebP.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
