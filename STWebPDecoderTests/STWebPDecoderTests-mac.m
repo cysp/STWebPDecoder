@@ -16,26 +16,24 @@
     NSData *_peakImageData;
 }
 
-//- (NSData *)st_bitmapDataForImage:(NSImage *)image {
-//    CGSize const imageSize = image.size;
-//    CGFloat const imageScale = image.scale;
-//    CGSize const ctxSize = (CGSize){ .width = imageSize.width * imageScale, .height = imageSize.height * imageScale };
-//    NSUInteger const bitsPerComponent = 8;
-//    NSUInteger const bytesPerPixel = 4;
-//    NSUInteger const stride = (NSUInteger)ctxSize.width * bytesPerPixel;
-//
-//    CGBitmapInfo const bitmapInfo = kCGBitmapByteOrder32Little | kCGImageAlphaPremultipliedFirst;
-//
-//    CGColorSpaceRef const drgb = CGColorSpaceCreateDeviceRGB();
-//    CGContextRef ctx = CGBitmapContextCreate(NULL, (size_t)ctxSize.width, (size_t)ctxSize.height, bitsPerComponent, stride, drgb, bitmapInfo);
-//    CGColorSpaceRelease(drgb);
-//    CGContextDrawImage(ctx, (CGRect){ .size = ctxSize }, [image CGImageForProposedRect:NULL context:nil hints:nil]);
-//    NSData * const imageData = [[NSData alloc] initWithBytes:CGBitmapContextGetData(ctx) length:(NSUInteger)(stride*ctxSize.height)];
-//
-//    CGContextRelease(ctx);
-//
-//    return imageData;
-//}
+- (NSData *)st_bitmapDataForImage:(NSImage *)image {
+    CGSize const imageSize = image.size;
+    NSUInteger const bitsPerComponent = 8;
+    NSUInteger const bytesPerPixel = 4;
+    NSUInteger const stride = (NSUInteger)imageSize.width * bytesPerPixel;
+
+    CGBitmapInfo const bitmapInfo = kCGBitmapByteOrder32Little | kCGImageAlphaPremultipliedFirst;
+
+    CGColorSpaceRef const drgb = CGColorSpaceCreateDeviceRGB();
+    CGContextRef ctx = CGBitmapContextCreate(NULL, (size_t)imageSize.width, (size_t)imageSize.height, bitsPerComponent, stride, drgb, bitmapInfo);
+    CGColorSpaceRelease(drgb);
+    CGContextDrawImage(ctx, (CGRect){ .size = imageSize }, [image CGImageForProposedRect:NULL context:nil hints:nil]);
+    NSData * const imageData = [[NSData alloc] initWithBytes:CGBitmapContextGetData(ctx) length:(NSUInteger)(stride*imageSize.height)];
+
+    CGContextRelease(ctx);
+
+    return imageData;
+}
 
 - (void)setUp {
     [super setUp];
@@ -43,32 +41,18 @@
     NSBundle * const bundle = [NSBundle bundleForClass:self.class];
     {
         NSURL * const gridPNGURL = [bundle URLForResource:@"grid" withExtension:@"png" subdirectory:@"libwebp-test-data"];
-        NSData * const gridPNGData = [[NSData alloc] initWithContentsOfURL:gridPNGURL options:NSDataReadingMappedIfSafe error:NULL];
-        NSBitmapImageRep * const gridImage = [[NSBitmapImageRep alloc] initWithData:gridPNGData];
-        NSData * const gridImageData = [[NSData alloc] initWithBytes:gridImage.bitmapData length:gridImage.bytesPerPlane];
-        _gridImageData = gridImageData;
+        NSImage * const gridImage = [[NSImage alloc] initWithContentsOfURL:gridPNGURL];
+        _gridImageData = [self st_bitmapDataForImage:gridImage];
     }
     {
         NSURL * const peakPNGURL = [bundle URLForResource:@"peak" withExtension:@"png" subdirectory:@"libwebp-test-data"];
-        NSData * const peakPNGData = [[NSData alloc] initWithContentsOfURL:peakPNGURL options:NSDataReadingMappedIfSafe error:NULL];
-        NSBitmapImageRep * const peakImage = [[NSBitmapImageRep alloc] initWithData:peakPNGData];
-        NSData * const peakImageData = [[NSData alloc] initWithBytes:peakImage.bitmapData length:peakImage.bytesPerPlane];
-        _peakImageData = peakImageData;
+        NSImage * const peakImage = [[NSImage alloc] initWithContentsOfURL:peakPNGURL];
+        _peakImageData = [self st_bitmapDataForImage:peakImage];
     }
 }
 
 - (BOOL)st_checkLosslessVec1Image:(NSImage *)image {
-    NSBitmapImageRep *imageBitmapRep = nil;
-    for (NSImageRep *rep in image.representations) {
-        if ([rep isKindOfClass:[NSBitmapImageRep class]]) {
-            imageBitmapRep = (NSBitmapImageRep *)rep;
-            break;
-        }
-    }
-    if (!imageBitmapRep) {
-        imageBitmapRep = [NSBitmapImageRep imageRepWithData:image.TIFFRepresentation];
-    }
-    NSData * const imageBitmapData = [[NSData alloc] initWithBytesNoCopy:imageBitmapRep.bitmapData length:imageBitmapRep.bytesPerPlane freeWhenDone:NO];
+    NSData * const imageBitmapData = [self st_bitmapDataForImage:image];
     return [_gridImageData isEqualToData:imageBitmapData];
 }
 
@@ -81,37 +65,57 @@
     return [self st_checkLosslessVec1Image:image];
 }
 
-- (void)testLosslessVec1 {
+- (void)testLosslessVec1_0 {
     XCTAssert([self st_testLosslessVec1:0], @"");
+}
+- (void)testLosslessVec1_1 {
     XCTAssert([self st_testLosslessVec1:1], @"");
+}
+- (void)testLosslessVec1_2 {
     XCTAssert([self st_testLosslessVec1:2], @"");
+}
+- (void)testLosslessVec1_3 {
     XCTAssert([self st_testLosslessVec1:3], @"");
+}
+- (void)testLosslessVec1_4 {
     XCTAssert([self st_testLosslessVec1:4], @"");
+}
+- (void)testLosslessVec1_5 {
     XCTAssert([self st_testLosslessVec1:5], @"");
+}
+- (void)testLosslessVec1_6 {
     XCTAssert([self st_testLosslessVec1:6], @"");
+}
+- (void)testLosslessVec1_7 {
     XCTAssert([self st_testLosslessVec1:7], @"");
+}
+- (void)testLosslessVec1_8 {
     XCTAssert([self st_testLosslessVec1:8], @"");
+}
+- (void)testLosslessVec1_9 {
     XCTAssert([self st_testLosslessVec1:9], @"");
+}
+- (void)testLosslessVec1_10 {
     XCTAssert([self st_testLosslessVec1:10], @"");
+}
+- (void)testLosslessVec1_11 {
     XCTAssert([self st_testLosslessVec1:11], @"");
+}
+- (void)testLosslessVec1_12 {
     XCTAssert([self st_testLosslessVec1:12], @"");
+}
+- (void)testLosslessVec1_13 {
     XCTAssert([self st_testLosslessVec1:13], @"");
+}
+- (void)testLosslessVec1_14 {
     XCTAssert([self st_testLosslessVec1:14], @"");
+}
+- (void)testLosslessVec1_15 {
     XCTAssert([self st_testLosslessVec1:15], @"");
 }
 
 - (BOOL)st_checkLosslessVec2Image:(NSImage *)image {
-    NSBitmapImageRep *imageBitmapRep = nil;
-    for (NSImageRep *rep in image.representations) {
-        if ([rep isKindOfClass:[NSBitmapImageRep class]]) {
-            imageBitmapRep = (NSBitmapImageRep *)rep;
-            break;
-        }
-    }
-    if (!imageBitmapRep) {
-        imageBitmapRep = [NSBitmapImageRep imageRepWithData:image.TIFFRepresentation];
-    }
-    NSData * const imageBitmapData = [[NSData alloc] initWithBytesNoCopy:imageBitmapRep.bitmapData length:imageBitmapRep.bytesPerPlane freeWhenDone:NO];
+    NSData * const imageBitmapData = [self st_bitmapDataForImage:image];
     return [_peakImageData isEqualToData:imageBitmapData];
 }
 
@@ -124,22 +128,52 @@
     return [self st_checkLosslessVec2Image:image];
 }
 
-- (void)testLosslessVec2 {
+- (void)testLosslessVec2_0 {
     XCTAssert([self st_testLosslessVec2:0], @"");
+}
+- (void)testLosslessVec2_1 {
     XCTAssert([self st_testLosslessVec2:1], @"");
+}
+- (void)testLosslessVec2_2 {
     XCTAssert([self st_testLosslessVec2:2], @"");
+}
+- (void)testLosslessVec2_3 {
     XCTAssert([self st_testLosslessVec2:3], @"");
+}
+- (void)testLosslessVec2_4 {
     XCTAssert([self st_testLosslessVec2:4], @"");
+}
+- (void)testLosslessVec2_5 {
     XCTAssert([self st_testLosslessVec2:5], @"");
+}
+- (void)testLosslessVec2_6 {
     XCTAssert([self st_testLosslessVec2:6], @"");
+}
+- (void)testLosslessVec2_7 {
     XCTAssert([self st_testLosslessVec2:7], @"");
+}
+- (void)testLosslessVec2_8 {
     XCTAssert([self st_testLosslessVec2:8], @"");
+}
+- (void)testLosslessVec2_9 {
     XCTAssert([self st_testLosslessVec2:9], @"");
+}
+- (void)testLosslessVec2_10 {
     XCTAssert([self st_testLosslessVec2:10], @"");
+}
+- (void)testLosslessVec2_11 {
     XCTAssert([self st_testLosslessVec2:11], @"");
+}
+- (void)testLosslessVec2_12 {
     XCTAssert([self st_testLosslessVec2:12], @"");
+}
+- (void)testLosslessVec2_13 {
     XCTAssert([self st_testLosslessVec2:13], @"");
+}
+- (void)testLosslessVec2_14 {
     XCTAssert([self st_testLosslessVec2:14], @"");
+}
+- (void)testLosslessVec2_15 {
     XCTAssert([self st_testLosslessVec2:15], @"");
 }
 
