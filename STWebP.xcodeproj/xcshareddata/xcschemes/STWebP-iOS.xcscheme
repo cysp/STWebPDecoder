@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2C0EC14518A2426100C47CC0"
-               BuildableName = "STWebPDecoderTests-iOS.xctest"
-               BlueprintName = "STWebPDecoderTests-iOS"
+               BuildableName = "STWebPTests-iOS.xctest"
+               BlueprintName = "STWebPTests-iOS"
                ReferencedContainer = "container:STWebP.xcodeproj">
             </BuildableReference>
          </TestableReference>

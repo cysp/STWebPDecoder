@@ -4,6 +4,8 @@
 //
 //  Copyright (c) 2013-2014 Scott Talbot.
 
+#import <Foundation/Foundation.h>
+
 #import "STWebP.h"
 
 

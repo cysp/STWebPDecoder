@@ -4,7 +4,7 @@
 //
 //  Copyright (c) 2013 Scott Talbot.
 
-#import "STWebPDecoder.h"
+#import "STWebP.h"
 
 #import "lib/libwebp/src/webp/decode.h"
 

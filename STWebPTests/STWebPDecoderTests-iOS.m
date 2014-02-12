@@ -2,9 +2,9 @@
 
 #import <XCTest/XCTest.h>
 
-#import <Cocoa/Cocoa.h>
+#import <UIKit/UIKit.h>
 
-#import "STWebPDecoder.h"
+#import <STWebP/STWebP.h>
 
 
 @interface STWebPDecoderTests : XCTestCase
@@ -16,19 +16,21 @@
     NSData *_peakImageData;
 }
 
-- (NSData *)st_bitmapDataForImage:(NSImage *)image {
+- (NSData *)st_bitmapDataForImage:(UIImage *)image {
     CGSize const imageSize = image.size;
+    CGFloat const imageScale = image.scale;
+    CGSize const ctxSize = (CGSize){ .width = imageSize.width * imageScale, .height = imageSize.height * imageScale };
     NSUInteger const bitsPerComponent = 8;
     NSUInteger const bytesPerPixel = 4;
-    NSUInteger const stride = (NSUInteger)imageSize.width * bytesPerPixel;
+    NSUInteger const stride = (NSUInteger)ctxSize.width * bytesPerPixel;
 
     CGBitmapInfo const bitmapInfo = kCGBitmapByteOrder32Little | kCGImageAlphaPremultipliedFirst;
 
     CGColorSpaceRef const drgb = CGColorSpaceCreateDeviceRGB();
-    CGContextRef ctx = CGBitmapContextCreate(NULL, (size_t)imageSize.width, (size_t)imageSize.height, bitsPerComponent, stride, drgb, bitmapInfo);
+    CGContextRef ctx = CGBitmapContextCreate(NULL, (size_t)ctxSize.width, (size_t)ctxSize.height, bitsPerComponent, stride, drgb, bitmapInfo);
     CGColorSpaceRelease(drgb);
-    CGContextDrawImage(ctx, (CGRect){ .size = imageSize }, [image CGImageForProposedRect:NULL context:nil hints:nil]);
-    NSData * const imageData = [[NSData alloc] initWithBytes:CGBitmapContextGetData(ctx) length:(NSUInteger)(stride*imageSize.height)];
+    CGContextDrawImage(ctx, (CGRect){ .size = ctxSize }, image.CGImage);
+    NSData * const imageData = [[NSData alloc] initWithBytes:CGBitmapContextGetData(ctx) length:(NSUInteger)(stride*ctxSize.height)];
 
     CGContextRelease(ctx);
 
@@ -41,17 +43,17 @@
     NSBundle * const bundle = [NSBundle bundleForClass:self.class];
     {
         NSURL * const gridPNGURL = [bundle URLForResource:@"grid" withExtension:@"png" subdirectory:@"libwebp-test-data"];
-        NSImage * const gridImage = [[NSImage alloc] initWithContentsOfURL:gridPNGURL];
+        UIImage * const gridImage = [[UIImage alloc] initWithContentsOfFile:gridPNGURL.path];
         _gridImageData = [self st_bitmapDataForImage:gridImage];
     }
     {
         NSURL * const peakPNGURL = [bundle URLForResource:@"peak" withExtension:@"png" subdirectory:@"libwebp-test-data"];
-        NSImage * const peakImage = [[NSImage alloc] initWithContentsOfURL:peakPNGURL];
+        UIImage * const peakImage = [[UIImage alloc] initWithContentsOfFile:peakPNGURL.path];
         _peakImageData = [self st_bitmapDataForImage:peakImage];
     }
 }
 
-- (BOOL)st_checkLosslessVec1Image:(NSImage *)image {
+- (BOOL)st_checkLosslessVec1Image:(UIImage *)image {
     NSData * const imageBitmapData = [self st_bitmapDataForImage:image];
     return [_gridImageData isEqualToData:imageBitmapData];
 }
@@ -61,7 +63,7 @@
     NSBundle * const bundle = [NSBundle bundleForClass:self.class];
     NSURL * const url = [bundle URLForResource:filename withExtension:@"webp" subdirectory:@"libwebp-test-data"];
     NSData * const data = [[NSData alloc] initWithContentsOfURL:url options:NSDataReadingMappedIfSafe error:NULL];
-    NSImage * const image = [STWebPDecoder imageWithData:data error:NULL];
+    UIImage * const image = [STWebPDecoder imageWithData:data error:NULL];
     return [self st_checkLosslessVec1Image:image];
 }
 
@@ -114,7 +116,7 @@
     XCTAssert([self st_testLosslessVec1:15], @"");
 }
 
-- (BOOL)st_checkLosslessVec2Image:(NSImage *)image {
+- (BOOL)st_checkLosslessVec2Image:(UIImage *)image {
     NSData * const imageBitmapData = [self st_bitmapDataForImage:image];
     return [_peakImageData isEqualToData:imageBitmapData];
 }
@@ -124,7 +126,7 @@
     NSBundle * const bundle = [NSBundle bundleForClass:self.class];
     NSURL * const url = [bundle URLForResource:filename withExtension:@"webp" subdirectory:@"libwebp-test-data"];
     NSData * const data = [[NSData alloc] initWithContentsOfURL:url options:NSDataReadingMappedIfSafe error:NULL];
-    NSImage * const image = [STWebPDecoder imageWithData:data error:NULL];
+    UIImage * const image = [STWebPDecoder imageWithData:data error:NULL];
     return [self st_checkLosslessVec2Image:image];
 }
 

@@ -4,7 +4,7 @@
 //
 //  Copyright (c) 2013-2014 Scott Talbot.
 
-#import "STWebP.h"
+#import <Foundation/Foundation.h>
 
 
 typedef NS_ENUM(NSUInteger, STWebPStreamingDecoderState) {

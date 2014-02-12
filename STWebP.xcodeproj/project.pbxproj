@@ -192,7 +192,7 @@
 			containerPortal = 2C605BA71727CEE500CE8626 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2CE5C68F172C83EF00CB54A5;
-			remoteInfo = "STWebPDecoder-mac";
+			remoteInfo = "STWebP-mac";
 		};
 		2CBA529B189BC36500529073 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -213,7 +213,7 @@
 			containerPortal = 2C605BA71727CEE500CE8626 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2CFC2D20172BD74300893638;
-			remoteInfo = STWebPDecoder;
+			remoteInfo = STWebP;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -240,11 +240,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2C0EC12D18A2279200C47CC0 /* STWebPDecoderTests-mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STWebPDecoderTests-mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0EC12D18A2279200C47CC0 /* STWebPTests-mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STWebPTests-mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0EC13118A2279200C47CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C0EC13518A2279200C47CC0 /* STWebPDecoderTests-mac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "STWebPDecoderTests-mac.m"; sourceTree = "<group>"; };
 		2C0EC13E18A2280800C47CC0 /* libwebp-test-data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "libwebp-test-data"; sourceTree = SOURCE_ROOT; };
-		2C0EC14618A2426100C47CC0 /* STWebPDecoderTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STWebPDecoderTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0EC14618A2426100C47CC0 /* STWebPTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "STWebPTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0EC15018A2426100C47CC0 /* STWebPDecoderTests-iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "STWebPDecoderTests-iOS.m"; sourceTree = "<group>"; };
 		2C5BD00C173157D2006B6AC5 /* STWebPURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STWebPURLProtocol.h; sourceTree = "<group>"; };
 		2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STWebPURLProtocol.m; sourceTree = "<group>"; };
@@ -457,7 +457,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C0EC12F18A2279200C47CC0 /* STWebPDecoderTests */ = {
+		2C0EC12F18A2279200C47CC0 /* STWebPTests */ = {
 			isa = PBXGroup;
 			children = (
 				2C0EC13118A2279200C47CC0 /* Info.plist */,
@@ -465,14 +465,14 @@
 				2C0EC15018A2426100C47CC0 /* STWebPDecoderTests-iOS.m */,
 				2C0EC13518A2279200C47CC0 /* STWebPDecoderTests-mac.m */,
 			);
-			path = STWebPDecoderTests;
+			path = STWebPTests;
 			sourceTree = "<group>";
 		};
 		2C605BA61727CEE500CE8626 = {
 			isa = PBXGroup;
 			children = (
 				2CFC2D23172BD74300893638 /* STWebP */,
-				2C0EC12F18A2279200C47CC0 /* STWebPDecoderTests */,
+				2C0EC12F18A2279200C47CC0 /* STWebPTests */,
 				2C605BB81727CEE500CE8626 /* STWebPDecoderExample-iOS */,
 				2CB9CC32172C86E10054BC07 /* STWebPDecoderExample-mac */,
 				2C751344172C8AA20036F82B /* samples */,
@@ -491,8 +491,8 @@
 				2CB9CC30172C86E10054BC07 /* STWebPDecoderExample-mac.app */,
 				2CBA51AF189BC15400529073 /* libwebp.a */,
 				2CBA51D6189BC25100529073 /* libwebp.a */,
-				2C0EC12D18A2279200C47CC0 /* STWebPDecoderTests-mac.xctest */,
-				2C0EC14618A2426100C47CC0 /* STWebPDecoderTests-iOS.xctest */,
+				2C0EC12D18A2279200C47CC0 /* STWebPTests-mac.xctest */,
+				2C0EC14618A2426100C47CC0 /* STWebPTests-iOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -739,8 +739,7 @@
 				2C5BD00C173157D2006B6AC5 /* STWebPURLProtocol.h */,
 				2C5BD00D173157D2006B6AC5 /* STWebPURLProtocol.m */,
 			);
-			name = STWebP;
-			path = STWebPDecoder;
+			path = STWebP;
 			sourceTree = "<group>";
 			usesTabs = 1;
 		};
@@ -767,9 +766,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2C0EC12C18A2279200C47CC0 /* STWebPDecoderTests-mac */ = {
+		2C0EC12C18A2279200C47CC0 /* STWebPTests-mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C0EC13C18A2279200C47CC0 /* Build configuration list for PBXNativeTarget "STWebPDecoderTests-mac" */;
+			buildConfigurationList = 2C0EC13C18A2279200C47CC0 /* Build configuration list for PBXNativeTarget "STWebPTests-mac" */;
 			buildPhases = (
 				2C0EC12918A2279200C47CC0 /* Sources */,
 				2C0EC12A18A2279200C47CC0 /* Frameworks */,
@@ -780,14 +779,14 @@
 			dependencies = (
 				2C0EC13918A2279200C47CC0 /* PBXTargetDependency */,
 			);
-			name = "STWebPDecoderTests-mac";
-			productName = "STWebPDecoderTests-mac";
-			productReference = 2C0EC12D18A2279200C47CC0 /* STWebPDecoderTests-mac.xctest */;
+			name = "STWebPTests-mac";
+			productName = "STWebPTests-mac";
+			productReference = 2C0EC12D18A2279200C47CC0 /* STWebPTests-mac.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2C0EC14518A2426100C47CC0 /* STWebPDecoderTests-iOS */ = {
+		2C0EC14518A2426100C47CC0 /* STWebPTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C0EC15518A2426100C47CC0 /* Build configuration list for PBXNativeTarget "STWebPDecoderTests-iOS" */;
+			buildConfigurationList = 2C0EC15518A2426100C47CC0 /* Build configuration list for PBXNativeTarget "STWebPTests-iOS" */;
 			buildPhases = (
 				2C0EC14218A2426100C47CC0 /* Sources */,
 				2C0EC14318A2426100C47CC0 /* Frameworks */,
@@ -798,9 +797,9 @@
 			dependencies = (
 				2C0EC15418A2426100C47CC0 /* PBXTargetDependency */,
 			);
-			name = "STWebPDecoderTests-iOS";
-			productName = "STWebPDecoderTests-iOS";
-			productReference = 2C0EC14618A2426100C47CC0 /* STWebPDecoderTests-iOS.xctest */;
+			name = "STWebPTests-iOS";
+			productName = "STWebPTests-iOS";
+			productReference = 2C0EC14618A2426100C47CC0 /* STWebPTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		2C605BAE1727CEE500CE8626 /* STWebPDecoderExample-iOS */ = {
@@ -888,7 +887,7 @@
 			dependencies = (
 			);
 			name = "STWebP-mac";
-			productName = "STWebPDecoder-mac";
+			productName = "STWebP-mac";
 			productReference = 2CE5C690172C83EF00CB54A5 /* libSTWebP.a */;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -905,7 +904,7 @@
 			dependencies = (
 			);
 			name = "STWebP-iOS";
-			productName = "STWebPDecoder-iOS";
+			productName = "STWebP-iOS";
 			productReference = 2CFC2D21172BD74300893638 /* libSTWebP.a */;
 			productType = "com.apple.product-type.library.static";
 		};
@@ -916,7 +915,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = STWebP;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Scott Talbot";
 				TargetAttributes = {
 					2C0EC12C18A2279200C47CC0 = {
@@ -941,8 +940,8 @@
 			targets = (
 				2CFC2D20172BD74300893638 /* STWebP-iOS */,
 				2CE5C68F172C83EF00CB54A5 /* STWebP-mac */,
-				2C0EC14518A2426100C47CC0 /* STWebPDecoderTests-iOS */,
-				2C0EC12C18A2279200C47CC0 /* STWebPDecoderTests-mac */,
+				2C0EC14518A2426100C47CC0 /* STWebPTests-iOS */,
+				2C0EC12C18A2279200C47CC0 /* STWebPTests-mac */,
 				2C605BAE1727CEE500CE8626 /* STWebPDecoderExample-iOS */,
 				2CB9CC2F172C86E10054BC07 /* STWebPDecoderExample-mac */,
 				2CBA51AE189BC15400529073 /* libwebp-iOS */,
@@ -1243,7 +1242,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = STWebPDecoderTests/Info.plist;
+				INFOPLIST_FILE = STWebPTests/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = xctest;
@@ -1258,7 +1257,7 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = STWebPDecoderTests/Info.plist;
+				INFOPLIST_FILE = STWebPTests/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = xctest;
@@ -1273,7 +1272,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				INFOPLIST_FILE = STWebPDecoderTests/Info.plist;
+				INFOPLIST_FILE = STWebPTests/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = xctest;
@@ -1288,7 +1287,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				INFOPLIST_FILE = STWebPDecoderTests/Info.plist;
+				INFOPLIST_FILE = STWebPTests/Info.plist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = xctest;
@@ -1338,6 +1337,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -1385,6 +1388,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				RUN_CLANG_STATIC_ANALYZER = YES;
@@ -1547,7 +1554,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C0EC13C18A2279200C47CC0 /* Build configuration list for PBXNativeTarget "STWebPDecoderTests-mac" */ = {
+		2C0EC13C18A2279200C47CC0 /* Build configuration list for PBXNativeTarget "STWebPTests-mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C0EC13A18A2279200C47CC0 /* Debug */,
@@ -1556,7 +1563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C0EC15518A2426100C47CC0 /* Build configuration list for PBXNativeTarget "STWebPDecoderTests-iOS" */ = {
+		2C0EC15518A2426100C47CC0 /* Build configuration list for PBXNativeTarget "STWebPTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C0EC15618A2426100C47CC0 /* Debug */,

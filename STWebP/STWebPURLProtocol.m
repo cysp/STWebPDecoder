@@ -4,9 +4,7 @@
 //
 //  Copyright (c) 2013 Scott Talbot.
 
-#import "STWebPURLProtocol.h"
-
-#import "STWebPStreamingDecoder.h"
+#import "STWebP.h"
 
 
 NSString * const STWebPURLProtocolOptionClaimWebPExtension = @"claim-webp-extension";

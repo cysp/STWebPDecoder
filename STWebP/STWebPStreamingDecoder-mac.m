@@ -4,7 +4,7 @@
 //
 //  Copyright (c) 2013-2014 Scott Talbot.
 
-#import "STWebPStreamingDecoder.h"
+#import "STWebP.h"
 
 #import "lib/libwebp/src/webp/decode.h"
 
@@ -78,10 +78,10 @@ static void STCGDataProviderReleaseDataCallbackFree(void * __unused info, const 
 	return _state;
 }
 
-- (UIImage *)imageWithScale:(CGFloat)scale {
+- (NSImage *)imageWithScale:(CGFloat)scale {
 	return [self imageWithScale:scale error:nil];
 }
-- (UIImage *)imageWithScale:(CGFloat)scale error:(NSError * __autoreleasing *)error {
+- (NSImage *)imageWithScale:(CGFloat)scale error:(NSError * __autoreleasing *)error {
 	switch (_state) {
 		case STWebPStreamingDecoderStateError: {
 			if (error) {
@@ -136,9 +136,14 @@ static void STCGDataProviderReleaseDataCallbackFree(void * __unused info, const 
 		return nil;
 	}
 
-	UIImage *image = [[UIImage alloc] initWithCGImage:bitmap scale:scale orientation:UIImageOrientationUp];
-	CFRelease(bitmap);
+	if (scale == 0) {
+		scale = 1;
+	}
+	NSSize const imageSize = (NSSize){ .width = w / scale, .height = h / scale };
 
+	NSImage *image = [[NSImage alloc] initWithCGImage:bitmap size:imageSize];
+	CFRelease(bitmap);
+	
 	return image;
 }
 
