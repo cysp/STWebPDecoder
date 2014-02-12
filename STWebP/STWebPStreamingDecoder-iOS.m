@@ -2,77 +2,16 @@
 //  License, v. 2.0. If a copy of the MPL was not distributed with this
 //  file, You can obtain one at http://mozilla.org/MPL/2.0/.
 //
-//  Copyright (c) 2013 Scott Talbot.
+//  Copyright (c) 2013-2014 Scott Talbot.
 
-#import "STWebPDecoder.h"
+#import "STWebP.h"
 
 #import "lib/libwebp/src/webp/decode.h"
-
-
-NSString * const STWebPErrorDomain = @"STWebP";
 
 
 static void STCGDataProviderReleaseDataCallbackFree(void * __unused info, const void *data, size_t __unused size) {
 	free((void *)data);
 }
-
-
-@implementation STWebPDecoder
-
-+ (NSImage *)imageWithData:(NSData *)data error:(NSError * __autoreleasing *)error {
-	return [self imageWithData:data scale:1 error:error];
-}
-
-+ (NSImage *)imageWithData:(NSData *)data scale:(CGFloat)scale error:(NSError * __autoreleasing *)error {
-	int w = 0, h = 0;
-	uint8_t *bitmapData = WebPDecodeBGRA(data.bytes, data.length, &w, &h);
-	if (!bitmapData) {
-		if (error) {
-			*error = [NSError errorWithDomain:STWebPErrorDomain code:STWebPDecodeFailure userInfo:nil];
-		}
-		return nil;
-	}
-
-	CGImageRef bitmap = NULL;
-	{
-		NSUInteger const bitsPerComponent = 8;
-		NSUInteger const bytesPerPixel = 4;
-		NSUInteger const bitsPerPixel = bitsPerComponent * bytesPerPixel;
-		NSUInteger const stride = (NSUInteger)w * bytesPerPixel;
-
-		CGBitmapInfo const bitmapInfo = kCGBitmapByteOrder32Little | kCGImageAlphaFirst;
-
-		CGColorSpaceRef drgb = CGColorSpaceCreateDeviceRGB();
-		if (drgb) {
-			CGDataProviderRef bitmapDataProvider = CGDataProviderCreateWithData(NULL, bitmapData, (size_t)(stride * h), STCGDataProviderReleaseDataCallbackFree);
-
-			if (bitmapDataProvider) {
-				bitmap = CGImageCreate((size_t)w, (size_t)h, bitsPerComponent, bitsPerPixel, stride, drgb, bitmapInfo, bitmapDataProvider, NULL, YES, kCGRenderingIntentDefault);
-				CGDataProviderRelease(bitmapDataProvider);
-			}
-
-			CGColorSpaceRelease(drgb);
-		}
-	}
-	if (!bitmap) {
-		if (error) {
-			*error = [NSError errorWithDomain:STWebPErrorDomain code:STWebPDecodeFailure userInfo:nil];
-		}
-		return nil;
-	}
-
-	if (scale == 0) {
-		scale = 1;
-	}
-	NSSize const imageSize = (NSSize){ .width = w / scale, .height = h / scale };
-
-	NSImage *image = [[NSImage alloc] initWithCGImage:bitmap size:imageSize];
-	CFRelease(bitmap);
-
-	return image;
-}
-
-@end
 
 
 @implementation STWebPStreamingDecoder {
@@ -139,10 +78,10 @@ static void STCGDataProviderReleaseDataCallbackFree(void * __unused info, const 
 	return _state;
 }
 
-- (NSImage *)imageWithScale:(CGFloat)scale {
+- (UIImage *)imageWithScale:(CGFloat)scale {
 	return [self imageWithScale:scale error:nil];
 }
-- (NSImage *)imageWithScale:(CGFloat)scale error:(NSError * __autoreleasing *)error {
+- (UIImage *)imageWithScale:(CGFloat)scale error:(NSError * __autoreleasing *)error {
 	switch (_state) {
 		case STWebPStreamingDecoderStateError: {
 			if (error) {
@@ -197,12 +136,7 @@ static void STCGDataProviderReleaseDataCallbackFree(void * __unused info, const 
 		return nil;
 	}
 
-	if (scale == 0) {
-		scale = 1;
-	}
-	NSSize const imageSize = (NSSize){ .width = w / scale, .height = h / scale };
-
-	NSImage *image = [[NSImage alloc] initWithCGImage:bitmap size:imageSize];
+	UIImage *image = [[UIImage alloc] initWithCGImage:bitmap scale:scale orientation:UIImageOrientationUp];
 	CFRelease(bitmap);
 
 	return image;
